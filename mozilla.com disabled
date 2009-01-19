@@ -1,0 +1,31 @@
+<?xml encoding="UTF-8"?>
+
+<clientConfig>
+
+    <emailProvider id="mozilla.com">
+      <domain>mozilla.com</domain>
+
+      <displayName>Mozilla Corporation internal email addresses</displayName>
+      <displayShortName>mozilla.com</displayShortName>
+
+      <incomingServer type="imap">
+         <hostname>mail.mozilla.com</hostname>
+         <port>993</port>
+         <socketType>SSL</socketType>
+         <username>%EMAILLOCALPART%</username>
+         <authentication>secure</authentication>
+      </incomingServer>
+
+      <outgoingServer type="smtp">
+         <hostname>smtp.mozilla.com</hostname>
+         <port>465</port>
+         <socketType>SSL</socketType>
+         <username>%EMAILLOCALPART%</username>
+         <authentication>secure</authentication>
+         <addThisServer>true</addThisServer>
+         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+      </outgoingServer>
+
+    </emailProvider>
+
+</clientConfig>
