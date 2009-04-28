@@ -7,6 +7,9 @@
       <domain>gmx.ch</domain>
       <domain>gmx.at</domain>
       <domain>gmx.li</domain>
+      <domain>gmx.fr</domain>
+      <domain>gmx.it</domain>
+      <domain>gmx.co.uk</domain>
       <!-- siehe auch unten -->
 
       <displayName>GMX Freemail</displayName>
