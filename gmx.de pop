@@ -15,9 +15,9 @@
       <displayName>GMX Freemail</displayName>
       <displayShortName>GMX</displayShortName>
 
-      <incomingServer type="imap">
-         <hostname>imap.gmx.net</hostname>
-         <port>993</port>
+      <incomingServer type="pop3">
+         <hostname>pop.gmx.net</hostname>
+         <port>995</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username> <!-- Kundennummer und Email-Adresse sollten beide funktionieren -->
          <authentication>plain</authentication>
@@ -28,7 +28,7 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username> <!-- s.o. -->
-         <authentication>secure</authentication>
+         <authentication>plain</authentication>
          <addThisServer>true</addThisServer>
          <useGlobalPreferredServer>false</useGlobalPreferredServer>
       </outgoingServer>
