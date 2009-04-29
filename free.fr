@@ -22,7 +22,7 @@
          <username>%EMAILLOCALPART%</username>
          <authentication>plain</authentication>
          <addThisServer>true</addThisServer>
-         <!-- IP-based auth: smtp server only allows connection from ISP network :-( ->
+         <!-- IP-based auth: smtp server only allows connection from ISP network :-( -->
          <useGlobalPreferredServer>true</useGlobalPreferredServer>
       </outgoingServer>
 
