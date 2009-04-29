@@ -16,6 +16,7 @@
       <displayName>GMX Freemail</displayName>
       <displayShortName>GMX</displayShortName>
 
+      <!-- imap costs money -->
       <incomingServer type="imap">
          <hostname>imap.gmx.net</hostname>
          <port>993</port>
@@ -29,7 +30,7 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username> <!-- s.o. -->
-         <authentication>secure</authentication>
+         <authentication>plain</authentication>
          <addThisServer>true</addThisServer>
          <useGlobalPreferredServer>false</useGlobalPreferredServer>
       </outgoingServer>
