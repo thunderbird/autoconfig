@@ -18,7 +18,7 @@
       <outgoingServer type="smtp">
          <hostname>securesmtp.t-online.de</hostname>
          <port>25</port>
-         <socketType>TLS</socketType>
+         <socketType>STARTTLS</socketType>
          <username>%EMAILADDRESS%</username>
          <authentication>plain</authentication>
          <addThisServer>true</addThisServer>
