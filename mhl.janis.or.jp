@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clientConfig>
+    <emailProvider id="mhl.janis.or.jp">
+      <domain>mhl.janis.or.jp</domain>
+
+      <displayName>JANIS</displayName>
+      <displayShortName>JANIS</displayShortName>
+
+      <incomingServer type="pop3">
+        <hostname>mail.mhl.janis.or.jp</hostname>
+        <port>110</port>
+        <socketType>plain</socketType>
+        <username>%EMAILLOCALPART%</username>
+        <authentication>plain</authentication>
+      </incomingServer>
+
+      <outgoingServer type="smtp">
+        <hostname>smtp.mhl.janis.or.jp</hostname>
+        <port>25</port>
+        <socketType>plain</socketType>
+        <authentication>none</authentication>
+        <addThisServer>true</addThisServer>
+        <useGlobalPreferredServer>false</useGlobalPreferredServer>
+      </outgoingServer>
+
+    </emailProvider>
+</clientConfig>
