@@ -4,7 +4,6 @@
     <emailProvider id="gmx.de">
       <domain>gmx.de</domain>
       <domain>gmx.net</domain>
-      <domain>gmx.com</domain>
       <domain>gmx.ch</domain>
       <domain>gmx.at</domain>
       <domain>gmx.li</domain>
