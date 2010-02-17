@@ -21,12 +21,12 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
+         <authentication>plain</authentication>
          <addThisServer>true</addThisServer>
          <useGlobalPreferredServer>false</useGlobalPreferredServer>
       </outgoingServer>
 
-      <enableURL url="https://mail.google.com/mail/?ui=2&amp;shva=1#settings/fwdandpop">You need to enable POP access</enableURL>
+      <enableURL url="https://mail.google.com/mail/?ui=2&amp;shva=1#settings/fwdandpop">You need to enable IMAP access</enableURL>
 
     </emailProvider>
 </clientConfig>
