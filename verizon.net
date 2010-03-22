@@ -8,11 +8,11 @@
       <displayShortName>Verizon</displayShortName>
 
       <incomingServer type="pop3">
-         <hostname>incoming.verizon.com</hostname>
+         <hostname>incoming.verizon.net</hostname>
          <port>110</port>
          <socketType>plain</socketType>
          <username>%EMAILLOCALPART%</username>
-         <authentication>plain</authentication>
+         <authentication>secure</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">

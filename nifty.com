@@ -9,14 +9,14 @@
       <port>110</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
+      <authentication>secure</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.nifty.com</hostname>
       <port>587</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
+      <authentication>secure</authentication>
       <addThisServer>true</addThisServer>
       <useGlobalPreferredServer>false</useGlobalPreferredServer>
     </outgoingServer>
