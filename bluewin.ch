@@ -17,7 +17,7 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>secure</authentication>
+      <authentication>plain</authentication>
     </incomingServer>
     -->
     <outgoingServer type="smtp">
