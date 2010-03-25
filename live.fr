@@ -14,6 +14,7 @@
       <domain>live.de</domain>
       <domain>live.fr</domain>
       <domain>live.it</domain>
+      <domain>live.jp</domain>
       <domain>msn.com</domain>
 
       <displayName>Microsoft Live Hotmail</displayName>
