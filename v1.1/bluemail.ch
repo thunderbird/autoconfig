@@ -3,8 +3,8 @@
   <emailProvider id="bluemail.ch">
     <domain>bluemail.ch</domain>
     <!-- Same ISP as bluewin.ch, but different username form -->
-    <displayName>bluemail.ch</displayName>
-    <displayShortName>bluemail.ch</displayShortName>
+    <displayName>bluewin.ch</displayName>
+    <displayShortName>bluewin.ch</displayShortName>
     <incomingServer type="imap">
       <hostname>imaps.bluewin.ch</hostname>
       <port>993</port>
