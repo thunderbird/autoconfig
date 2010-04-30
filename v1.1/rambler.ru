@@ -32,7 +32,7 @@
       </outgoingServer>
     </emailProvider>
 
-    <documentation url="http://help.rambler.ru/article.html?s=141&id=41"><descr lang="en">POP, Thunderbird, with screenshots</descr></documentation>
-    <documentation url="http://help.rambler.ru/article.html?s=141&id=33"><descr lang="en">IMAP, all clients</descr></documentation>
+    <documentation url="http://help.rambler.ru/article.html?s=141&amp;id=41"><descr lang="en">POP, Thunderbird, with screenshots</descr></documentation>
+    <documentation url="http://help.rambler.ru/article.html?s=141&amp;id=33"><descr lang="en">IMAP, all clients</descr></documentation>
 
 </clientConfig>

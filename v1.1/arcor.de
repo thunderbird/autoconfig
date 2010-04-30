@@ -47,8 +47,8 @@
          <username>%EMAILLOCALPART%</username>
       </outgoingServer>
 
-      <documentation url="http://www.arcor.de/hilfe/neu/index.php?aktion=anzeigen&rubrik=040006001&id=181"><descr lang="en">Generic settings</descr></documentation>
-      <documentation url="http://www.arcor.de/hilfe/neu/index.php?aktion=anzeigen&rubrik=006001003&id=1241"><descr lang="en">TB 2.0 settings</descr></documentation>
+      <documentation url="http://www.arcor.de/hilfe/neu/index.php?aktion=anzeigen&amp;rubrik=040006001&amp;id=181"><descr lang="en">Generic settings</descr></documentation>
+      <documentation url="http://www.arcor.de/hilfe/neu/index.php?aktion=anzeigen&amp;rubrik=006001003&amp;id=1241"><descr lang="en">TB 2.0 settings</descr></documentation>
       <!--
          Sent Folder: SentMail
          Draft Folder: Drafts
