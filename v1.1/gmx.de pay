@@ -1,43 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <clientConfig version="1.1">
-    <emailProvider id="gmx.de">
-      <domain>gmx.de</domain>
-      <domain>gmx.net</domain>
-      <domain>gmx.ch</domain>
-      <domain>gmx.at</domain>
-      <domain>gmx.li</domain>
-      <domain>gmx.fr</domain>
-      <domain>gmx.it</domain>
-      <domain>gmx.co.uk</domain>
-      <!-- see file "gmx.de" -->
-
-      <displayName>GMX Pro/TopMail</displayName>
-      <displayShortName>GMX</displayShortName>
-
-      <incomingServer type="imap">
-        <hostname>imap.gmx.net</hostname>
-        <port>993</port>
-        <socketType>SSL</socketType>
-        <!-- Kundennummer und Email-Adresse sollten beide funktionieren -->
-        <username>%EMAILADDRESS%</username>
-        <authentication>password-cleartext</authentication>
-      </incomingServer>
-      <incomingServer type="pop3">
-        <hostname>pop.gmx.net</hostname>
-        <port>995</port>
-        <socketType>SSL</socketType>
-        <username>%EMAILADDRESS%</username> <!-- s.o. -->
-        <authentication>password-cleartext</authentication>
-      </incomingServer>
-
-      <outgoingServer type="smtp">
-        <hostname>mail.gmx.net</hostname>
-        <port>465</port>
-        <socketType>SSL</socketType>
-        <username>%EMAILADDRESS%</username> <!-- s.o. -->
-        <authentication>password-cleartext</authentication>
-      </outgoingServer>
-
-    </emailProvider>
+  <emailProvider id="gmx.de">
+    <domain>gmx.de</domain>
+    <domain>gmx.net</domain>
+    <domain>gmx.ch</domain>
+    <domain>gmx.at</domain>
+    <domain>gmx.li</domain>
+    <domain>gmx.fr</domain>
+    <domain>gmx.it</domain>
+    <domain>gmx.co.uk</domain>
+    <!-- see file "gmx.de" -->
+    <displayName>GMX Pro/TopMail</displayName>
+    <displayShortName>GMX</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.gmx.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <!-- Kundennummer und Email-Adresse sollten beide funktionieren -->
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.gmx.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <!-- s.o. -->
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.gmx.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <!-- s.o. -->
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
 </clientConfig>

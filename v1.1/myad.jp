@@ -1416,8 +1416,6 @@
       <socketType>plain</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
-      
-      
     </outgoingServer>
   </emailProvider>
 </clientConfig>

@@ -17,8 +17,6 @@
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
-      
-
     </outgoingServer>
   </emailProvider>
 </clientConfig>

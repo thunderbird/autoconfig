@@ -28,8 +28,6 @@
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%.%EMAILDOMAIN%</username>
       <authentication>password-encrypted</authentication>
-      
-      
     </outgoingServer>
   </emailProvider>
 </clientConfig>

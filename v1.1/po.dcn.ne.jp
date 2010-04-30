@@ -16,8 +16,6 @@
       <port>25</port>
       <socketType>plain</socketType>
       <authentication>none</authentication>
-      
-      
     </outgoingServer>
   </emailProvider>
 </clientConfig>

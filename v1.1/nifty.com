@@ -17,8 +17,6 @@
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-encrypted</authentication>
-      
-      
     </outgoingServer>
   </emailProvider>
 </clientConfig>

@@ -17,8 +17,6 @@
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
-      
-      
     </outgoingServer>
   </emailProvider>
 </clientConfig>
