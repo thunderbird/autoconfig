@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="gmx.de">
       <domain>gmx.de</domain>
       <domain>gmx.net</domain>
@@ -15,22 +15,22 @@
       <displayName>GMX Freemail</displayName>
       <displayShortName>GMX</displayShortName>
 
+      <!-- imap costs money, see file "gmx.de pay" -->
       <incomingServer type="pop3">
-         <hostname>pop.gmx.net</hostname>
-         <port>995</port>
-         <socketType>SSL</socketType>
-         <username>%EMAILADDRESS%</username> <!-- Kundennummer und Email-Adresse sollten beide funktionieren -->
-         <authentication>plain</authentication>
+        <hostname>pop.gmx.net</hostname>
+        <port>995</port>
+        <socketType>SSL</socketType>
+        <!-- Kundennummer und Email-Adresse sollten beide funktionieren -->
+        <username>%EMAILADDRESS%</username>
+        <authentication>password-cleartext</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">
-         <hostname>mail.gmx.net</hostname>
-         <port>465</port>
-         <socketType>SSL</socketType>
-         <username>%EMAILADDRESS%</username> <!-- s.o. -->
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+        <hostname>mail.gmx.net</hostname>
+        <port>465</port>
+        <socketType>SSL</socketType>
+        <username>%EMAILADDRESS%</username> <!-- s.o. -->
+        <authentication>password-cleartext</authentication>
       </outgoingServer>
 
     </emailProvider>

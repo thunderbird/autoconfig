@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<clientConfig>
+<clientConfig version="1.1">
   <emailProvider id="inbox.lt">
     <domain>inbox.lt</domain>
+    <!-- Same as inbox.lv -->
     <displayName>Inbox.lt</displayName>
     <displayShortName>Inbox.lt</displayShortName>
     <incomingServer type="pop3">
@@ -9,10 +10,9 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
+      <authentication>password-cleartext</authentication>
       <pop3>
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
-        <daysToLeaveMessagesOnServer>999</daysToLeaveMessagesOnServer>
       </pop3>
     </incomingServer>
     <outgoingServer type="smtp">
@@ -20,9 +20,7 @@
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
-      <addThisServer>true</addThisServer>
-      <useGlobalPreferredServer>false</useGlobalPreferredServer>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
 </clientConfig>

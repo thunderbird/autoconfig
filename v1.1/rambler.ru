@@ -1,11 +1,6 @@
-Index: rambler.ru
-===================================================================
---- rambler.ru	(revision 0)
-+++ rambler.ru	(revision 0)
-@@ -0,0 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig version="3.0">
+<clientConfig version="1.1">
     <emailProvider id="rambler.ru">
       <domain>rambler.ru</domain>
 
@@ -17,30 +12,27 @@ Index: rambler.ru
          <port>993</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
-      <!--
+
       <incomingServer type="pop">
          <hostname>mail.rambler.ru</hostname>
          <port>995</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
+         <authentication>password-encrypted</authentication>
       </incomingServer>
-      -->
+
       <outgoingServer type="smtp">
          <hostname>mail.rambler.ru</hostname>
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-encrypted</authentication>
       </outgoingServer>
     </emailProvider>
-    <!--
-      Config is described at
-      http://help.rambler.ru/article.html?s=141&id=41 (POP, Thunderbird, with screenshots)
-      http://help.rambler.ru/article.html?s=141&id=33 (IMAP, all clients)
-    -->
+
+    <documentation url="http://help.rambler.ru/article.html?s=141&id=41"><descr lang="en">POP, Thunderbird, with screenshots</descr></documentation>
+    <documentation url="http://help.rambler.ru/article.html?s=141&id=33"><descr lang="en">IMAP, all clients</descr></documentation>
+
 </clientConfig>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="libero.it">
       <domain>libero.it</domain>
       <domain>iol.it</domain>
@@ -15,30 +15,27 @@
          <port>143</port>
          <socketType>plain</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
+         <authentication>password-encrypted</authentication>
       </incomingServer>
-      <!--
+
       <incomingServer type="pop3">
          <hostname>popmail.libero.it</hostname>
          <port>110</port>
          <socketType>plain</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
+         <authentication>password-encrypted</authentication>
       </incomingServer>
-      -->
+
       <outgoingServer type="smtp">
          <hostname>smtp.libero.it</hostname>
          <port>25</port>
          <socketType>plain</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-encrypted</authentication>
       </outgoingServer>
-      <!--
-        Libero support page
-        http://aiuto.libero.it/mail/istruzioni/configura-mozilla-thunderbird-per-windows-a11.phtml
-        http://aiuto.libero.it/mail/utilizzo-di-un-client/faq/5388.phtml
-        -->
+
+      <documentation url="http://aiuto.libero.it/mail/istruzioni/configura-mozilla-thunderbird-per-windows-a11.phtml"/>
+      <documentation url="http://aiuto.libero.it/mail/utilizzo-di-un-client/faq/5388.phtml"/>
+
     </emailProvider>
 </clientConfig>

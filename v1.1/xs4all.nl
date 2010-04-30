@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="xs4all.nl">
       <domain>xs4all.nl</domain>
 
@@ -12,7 +12,7 @@
          <port>995</port>
          <socketType>SSL</socketType>
          <username>%EMAILLOCALPART%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">
@@ -20,9 +20,9 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILLOCALPART%</username>
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-cleartext</authentication>
+         
+         
       </outgoingServer>
 
     </emailProvider>

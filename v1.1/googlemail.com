@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="googlemail.com">
       <domain>gmail.com</domain>
       <domain>googlemail.com</domain>
@@ -13,7 +13,17 @@
          <port>993</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
+      </incomingServer>
+      <incomingServer type="pop3">
+         <hostname>pop.googlemail.com</hostname>
+         <port>995</port>
+         <socketType>SSL</socketType>
+         <username>%EMAILLOCALPART%</username>
+         <authentication>password-cleartext</authentication>
+         <pop3>
+           <leaveMessagesOnServer>true</leaveMessagesOnServer>
+         </pop3>
       </incomingServer>
 
       <outgoingServer type="smtp">
@@ -21,12 +31,18 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-cleartext</authentication>
+         
+         
       </outgoingServer>
 
-      <enableURL url="https://mail.google.com/mail/?ui=2&amp;shva=1#settings/fwdandpop">You need to enable IMAP access</enableURL>
+      <enable visiturl="https://mail.google.com/mail/?ui=2&amp;shva=1#settings/fwdandpop">
+         <instruction>You need to enable IMAP access</instruction>
+      </enable>
+      <documentation url="http://mail.google.com/support/bin/answer.py?answer=13273"><descr>How to enable IMAP/POP3 in GMail</descr></documentation>
+      <documentation url="http://mail.google.com/support/bin/topic.py?topic=12806"><descr>How to configure email clients for IMAP</descr></documentation>
+      <documentation url="http://mail.google.com/support/bin/topic.py?topic=12805"><descr>How to configure email clients for POP3</descr></documentation>
+      <documentation url="http://mail.google.com/support/bin/answer.py?answer=86399"><descr>How to configure TB 2.0 for POP3</descr></documentation>
 
     </emailProvider>
 </clientConfig>

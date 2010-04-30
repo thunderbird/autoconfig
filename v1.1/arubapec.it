@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="arubapec.it">
       <domain>pec.it</domain>
+      <domain>arubapec.it</domain>
       <domain>mypec.eu</domain>
       <domain>gigapec.it</domain>
       <domain>ingpec.eu</domain>
-      <domain>arubapec.it</domain>
 	  
       <displayName>Aruba PEC</displayName>
       <displayShortName>Aruba</displayShortName>
@@ -16,31 +16,26 @@
          <port>993</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
-      <!--
+
       <incomingServer type="pop3">
          <hostname>pop3s.pec.aruba.it</hostname>
          <port>993</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
-      -->
 
       <outgoingServer type="smtp">
          <hostname>smtps.pec.aruba.it</hostname>
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-cleartext</authentication>
       </outgoingServer>
 
-      <!--
-        Aruba support videos
-        http://pec.aruba.it/guide_filmate.asp
-      -->
+      <documentation url="http://pec.aruba.it/guide_filmate.asp"/>
+
     </emailProvider>
 </clientConfig>

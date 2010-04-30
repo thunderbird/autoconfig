@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="yahoo.com">
       <domain>yahoo.com</domain>
       <domain>yahoo.de</domain>
       <domain>yahoo.it</domain>
       <domain>yahoo.fr</domain>
+      <domain>yahoo.es</domain>
       <domain>yahoo.co.uk</domain>
       <domain>yahoo.com.br</domain>
       <domain>ymail.com</domain>
@@ -19,7 +20,7 @@
          <port>995</port>
          <socketType>SSL</socketType>
          <username>%EMAILLOCALPART%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">
@@ -27,9 +28,9 @@
          <port>465</port>
          <socketType>SSL</socketType>
          <username>%EMAILLOCALPART%</username>
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-cleartext</authentication>
+         
+         
       </outgoingServer>
 
     </emailProvider>

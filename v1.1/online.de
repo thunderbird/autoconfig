@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="1und1.de">
       <domain>online.de</domain>
       <domain>onlinehome.de</domain>
@@ -17,8 +17,29 @@
          <hostname>imap.1und1.de</hostname>
          <port>993</port>
          <socketType>SSL</socketType>
-         <!-- also works: <port>143</port> <socketType>STARTTLS</socketType> -->
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+      <incomingServer type="imap">
+         <hostname>imap.1und1.de</hostname>
+         <port>143</port>
+         <socketType>STARTTLS</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+
+      <incomingServer type="pop3">
+         <hostname>pop.1und1.de</hostname>
+         <port>995</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+      <incomingServer type="pop3">
+         <hostname>pop.1und1.de</hostname>
+         <port>110</port>
+         <socketType>STARTTLS</socketType>
+         <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
       </incomingServer>
 
@@ -26,17 +47,14 @@
          <hostname>smtp.1und1.de</hostname>
          <port>587</port>
          <socketType>STARTTLS</socketType>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
       </outgoingServer>
-      <!--
-      http://hilfe-center.1und1.de/access/search/go.php?t=e698123
-      Kundenservice: +49-721-9600
-      Presse: +49-2602-961276 <presse@1und1.de>
 
-      Failed: SMTP server doesn't answer me, apparently works only within the ISP network
+      <documentation url="http://hilfe-center.1und1.de/access/search/go.php?t=e698123"/>
+      <!--
+        Kundenservice: +49-721-9600
+        Presse: +49-2602-961276 <presse@1und1.de>
       -->
 
     </emailProvider>

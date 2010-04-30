@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="earthlink.net">
       <domain>earthlink.net</domain>
 
@@ -12,7 +12,7 @@
          <port>143</port>
          <socketType>plain</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
+         <authentication>password-encrypted</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">
@@ -20,9 +20,9 @@
          <port>587</port>
          <socketType>STARTTLS</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>secure</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-encrypted</authentication>
+         
+         
       </outgoingServer>
 
     </emailProvider>

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<clientConfig>
+<clientConfig version="1.1">
     <emailProvider id="hotmail.com">
       <domain>hotmail.com</domain>
       <domain>hotmail.co.uk</domain>
       <domain>hotmail.co.jp</domain>
+      <domain>hotmail.com.br</domain>
       <domain>hotmail.de</domain>
       <domain>hotmail.fr</domain>
       <domain>hotmail.it</domain>
+      <domain>hotmail.es</domain>
       <domain>live.com</domain>
       <domain>live.co.uk</domain>
       <domain>live.co.jp</domain>
@@ -25,7 +27,7 @@
          <port>995</port>
          <socketType>SSL</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
+         <authentication>password-cleartext</authentication>
       </incomingServer>
 
       <outgoingServer type="smtp">
@@ -33,9 +35,9 @@
          <port>587</port>
          <socketType>STARTTLS</socketType>
          <username>%EMAILADDRESS%</username>
-         <authentication>plain</authentication>
-         <addThisServer>true</addThisServer>
-         <useGlobalPreferredServer>false</useGlobalPreferredServer>
+         <authentication>password-cleartext</authentication>
+         
+         
       </outgoingServer>
 
     </emailProvider>
