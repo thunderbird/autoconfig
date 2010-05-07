@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<clientConfig>
+<clientConfig version="1.1">
   <emailProvider id="pop.shibata.ne.jp">
     <domain>pop.shibata.ne.jp</domain>
     <domain>ml.shibata.ne.jp</domain>
@@ -10,16 +10,14 @@
       <port>110</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>%EMAILDOMAIN%</hostname>
       <port>25</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
-      <addThisServer>true</addThisServer>
-      <useGlobalPreferredServer>false</useGlobalPreferredServer>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
 </clientConfig>
