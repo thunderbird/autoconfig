@@ -1,10 +1,10 @@
-https://wiki.mozilla.org/Thunderbird:Autoconfiguration
 https://wiki.mozilla.org/MailServerList
+https://developer.mozilla.org/en/Thunderbird/Autoconfiguration
+https://wiki.mozilla.org/Thunderbird:Autoconfiguration
 http://spreadsheets.google.com/ccc?key=p49SW32nNYX0otkRc3UZUJA
 
 Any changes where will go live and affect the new account settings of all
-TB3 users, so be careful. For instructions about care and values, see
-<https://wiki.mozilla.org/MailServerList>.
+TB3 users, so be careful. Be sure to read the docs above.
 
 
 Alternative configurations
