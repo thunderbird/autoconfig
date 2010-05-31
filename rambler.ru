@@ -11,7 +11,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <incomingServer type="pop">
+    <incomingServer type="pop3">
       <hostname>mail.rambler.ru</hostname>
       <port>995</port>
       <socketType>SSL</socketType>

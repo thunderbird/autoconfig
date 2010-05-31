@@ -7,7 +7,7 @@
     <domain>bk.ru</domain>
     <displayName>mail.ru</displayName>
     <displayShortName>mail.ru</displayShortName>
-    <incomingServer type="pop">
+    <incomingServer type="pop3">
       <hostname>pop.mail.ru</hostname>
       <port>110</port>
       <socketType>plain</socketType>
