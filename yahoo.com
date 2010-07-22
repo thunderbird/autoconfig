@@ -9,7 +9,9 @@
     <domain>yahoo.co.uk</domain>
     <domain>yahoo.co.nz</domain>
     <domain>yahoo.com.au</domain>
+    <domain>yahoo.com.ar</domain>
     <domain>yahoo.com.br</domain>
+    <domain>yahoo.com.mx</domain>
     <domain>ymail.com</domain>
     <domain>rocketmail.com</domain>
     <displayName>Yahoo! Mail</displayName>
