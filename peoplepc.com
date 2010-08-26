@@ -11,6 +11,13 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.peoplepc.com</hostname>
+      <port>110</port>
+      <socketType>plain</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-encrypted</authentication>
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtpauth.peoplepc.com</hostname>
       <port>587</port>

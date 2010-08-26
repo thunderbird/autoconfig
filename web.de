@@ -12,6 +12,13 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.web.de</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.web.de</hostname>
       <port>995</port>
@@ -20,6 +27,17 @@
       <authentication>password-cleartext</authentication>
       <pop3>
         <!-- server allows checks only every 15 minutes, otherwise fails at auth -->
+        <checkInterval minutes="15"/>
+      </pop3>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.web.de</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+      <pop3>
+        <!-- see above -->
         <checkInterval minutes="15"/>
       </pop3>
     </incomingServer>
