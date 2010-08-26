@@ -3,7 +3,10 @@
   <emailProvider id="googlemail.com">
     <domain>gmail.com</domain>
     <domain>googlemail.com</domain>
-    <domain>google.com</domain><!-- for Google Apps -> MX -->
+    <!-- MX, for Google Apps -->
+    <domain>google.com</domain>
+    <!-- HACK. Only add ISPs with 100000+ users here -->
+    <domain>jazztel.es</domain>
     <displayName>Google Mail</displayName>
     <displayShortName>GMail</displayShortName>
     <incomingServer type="imap">
