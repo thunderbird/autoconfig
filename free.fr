@@ -23,7 +23,7 @@
       <port>25</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
       <restriction>client-IP-address</restriction>
     </outgoingServer>
   </emailProvider>
