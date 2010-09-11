@@ -20,10 +20,11 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.free.fr</hostname>
-      <port>587</port>
+      <port>25</port>
       <socketType>plain</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-encrypted</authentication>
+      <restriction>client-IP-address</restriction>
     </outgoingServer>
   </emailProvider>
 </clientConfig>
