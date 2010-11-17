@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="ji.jet.ne.jp">
-    <domain>jet.ne.jp</domain>
+    <domain>ji.jet.ne.jp</domain>
     <displayName>JETINTERNET</displayName>
     <displayShortName>JET</displayShortName>
     <incomingServer type="pop3">
