@@ -23,6 +23,13 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.mail.yahoo.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.mail.yahoo.com</hostname>
       <port>465</port>
