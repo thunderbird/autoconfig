@@ -2,6 +2,9 @@
 <clientConfig version="1.1">
   <emailProvider id="earthlink.net">
     <domain>earthlink.net</domain>
+    <domain>mindspring.com</domain>
+    <domain>ix.netcom.com</domain>
+    <!-- many other domains, via MX earthlink.net -->
     <displayName>EarthLink</displayName>
     <displayShortName>EarthLink</displayShortName>
     <incomingServer type="imap">
@@ -25,5 +28,8 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </outgoingServer>
+    <documentation url="http://support.earthlink.net/email/email-server-settings.php">
+      <descr>POP settings, domains</descr>
+    </documentation>
   </emailProvider>
 </clientConfig>
