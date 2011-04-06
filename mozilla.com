@@ -8,15 +8,15 @@
       <hostname>mail.mozilla.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-encrypted</authentication>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.mozilla.com</hostname>
+      <hostname>smtp.mozilla.org</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-encrypted</authentication>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
 </clientConfig>
