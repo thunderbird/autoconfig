@@ -2,7 +2,8 @@
 <clientConfig version="1.1">
   <emailProvider id="mozilla.com">
     <domain>mozilla.com</domain>
-    <displayName>Mozilla Corporation internal email addresses</displayName>
+    <domain>mozillafoundation.org</domain>
+    <displayName>Mozilla Corporation and Mozilla Foundation internal email addresses</displayName>
     <displayShortName>mozilla.com</displayShortName>
     <incomingServer type="imap">
       <hostname>mail.mozilla.com</hostname>
