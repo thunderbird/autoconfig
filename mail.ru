@@ -9,17 +9,34 @@
     <displayShortName>mail.ru</displayShortName>
     <incomingServer type="pop3">
       <hostname>pop.mail.ru</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.mail.ru</hostname>
       <port>110</port>
-      <socketType>plain</socketType>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.mail.ru</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.mail.ru</hostname>
       <port>587</port>
-      <socketType>plain</socketType>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
+  <documentation url="http://help.mail.ru/mail-help/mailer/mt">
+    <descr lang="en">POP, Thunderbird, with screenshots</descr>
+  </documentation>
 </clientConfig>
