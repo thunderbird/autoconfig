@@ -20,7 +20,7 @@
       <hostname>pop.googlemail.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
       <pop3>
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
