@@ -23,7 +23,7 @@
          <addThisServer>true</addThisServer>
          <useGlobalPreferredServer>false</useGlobalPreferredServer>
       </outgoingServer>
-      <documentation url="http://internet.bell.ca/index.cfm?method=content.view&category_id=585&content_id=12767">
+      <documentation url="http://internet.bell.ca/index.cfm?method=content.view&amp;category_id=585&amp;content_id=12767">
 	  <descr>POP settings, domains</descr>
       </documentation>
     </emailProvider>
