@@ -7,6 +7,20 @@
     <domain>bk.ru</domain>
     <displayName>mail.ru</displayName>
     <displayShortName>mail.ru</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.mail.ru</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.mail.ru</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop.mail.ru</hostname>
       <port>995</port>
@@ -37,6 +51,6 @@
     </outgoingServer>
   </emailProvider>
   <documentation url="http://help.mail.ru/mail-help/mailer/mt">
-    <descr lang="en">POP, Thunderbird, with screenshots</descr>
+    <descr lang="en">IMAP, POP, Thunderbird, with screenshots</descr>
   </documentation>
 </clientConfig>
