@@ -5,6 +5,7 @@
     <domain>inbox.ru</domain>
     <domain>list.ru</domain>
     <domain>bk.ru</domain>
+    <domain>corp.mail.ru</domain>
     <displayName>mail.ru</displayName>
     <displayShortName>mail.ru</displayShortName>
     <incomingServer type="imap">
