@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="uol.com.br">
+    <domain>uol.com.br</domain>
+    <displayName>UOL</displayName>
+    <displayShortName>UOL</displayShortName>
+    <incomingServer type="pop3">
+      <hostname>pop3.uol.com.br</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.uol.com.br</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtps.uol.com.br</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <enable visiturl="http://bmail.uol.com.br/configuration/imap_access_config">
+      <instruction lang="pt-BR">Para usar o protocolo IMAP, você deve antes acessar as suas Configurações do webmail UOL, clicar na opção "Ativar IMAP" e então salvar as modificações.</instruction>
+      <instruction lang="en-US">To use IMAP, you must log in to webmail, go to "Settings", click "Activate IMAP"</instruction>
+    </enable>
+    <documentation url="https://sac.uol.com.br/info/primeiros_passos/config_mozillathunderbird.jhtm">
+      <descr lang="pt-BR">Configuração do Mozilla Thunderbird passo-a-passo</descr>
+    </documentation>
+    <documentation url="http://email.uol.com.br/ajuda/imap-thunderbird-3.jhtm">
+      <descr lang="pt-BR">Configuração IMAP do Mozilla Thunderbird passo-a-passo</descr>
+    </documentation>
+    <documentation url="http://email.uol.com.br/ajuda/imap.jhtm">
+      <descr lang="pt-BR">O que é IMAP e como ativá-lo na sua conta UOL</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
