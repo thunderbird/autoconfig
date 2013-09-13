@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="bol.com.br">
+    <domain>bol.com.br</domain>
+    <displayName>BOL - Brasil Online</displayName>
+    <displayShortName>BOL</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.bol.com.br</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.bol.com.br</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtps.bol.com.br</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtps.bol.com.br</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="http://email.bol.uol.com.br/ajuda/configuracao/imap-thunderbird-3-bol.jhtm">
+      <descr lang="en-US">Step-by-step instructions to configure Thunderbird with IMAP</descr>
+      <descr lang="pt-BR">Configuração IMAP do Mozilla Thunderbird passo-a-passo</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
