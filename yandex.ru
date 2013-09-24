@@ -12,21 +12,21 @@
     <displayName>Yandex Mail</displayName>
     <displayShortName>Yandex</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap.yandex.ru</hostname>
+      <hostname>imap.yandex.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop.yandex.ru</hostname>
+      <hostname>pop.yandex.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.yandex.ru</hostname>
+      <hostname>smtp.yandex.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
