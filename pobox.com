@@ -46,7 +46,7 @@
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
-    <documentation url="http://www.pobox.com/helpspot/index.php?pg=kb.book&id=18">
+    <documentation url="http://www.pobox.com/helpspot/index.php?pg=kb.book&amp;id=18">
       <descr lang="en">Set Up Your Email Application to Use Pobox</descr>
     </documentation>
   </emailProvider>
