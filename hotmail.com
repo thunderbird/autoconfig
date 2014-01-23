@@ -17,21 +17,42 @@
     <domain>live.it</domain>
     <domain>live.jp</domain>
     <domain>msn.com</domain>
+    <domain>outlook.com</domain>
     <displayName>Microsoft Live Hotmail</displayName>
     <displayShortName>Hotmail</displayShortName>
-    <incomingServer type="pop3">
-      <hostname>pop3.live.com</hostname>
-      <port>995</port>
+    <incomingServer type="imap">
+      <hostname>imap-mail.outlook.com</hostname>
+      <port>993</port>
       <socketType>SSL</socketType>
+      <!-- wrong cert, for *.hotmail.com -->
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop-mail.outlook.com</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <!-- wrong cert, for *.hotmail.com -->
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+      <pop3>
+        <leaveMessagesOnServer>true</leaveMessagesOnServer>
+        <!-- Outlook.com docs specifically mention that POP3 deletes have effect on the main inbox on webmail and IMAP -->
+      </pop3>
+    </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.live.com</hostname>
+      <hostname>smtp-mail.outlook.com</hostname>
       <port>587</port>
+      <!-- wrong cert, for *.hotmail.com -->
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="http://windows.microsoft.com/en-US/windows/outlook/send-receive-from-app">
+      <descr lang="en">Set up an email app with Outlook.com</descr>
+    </documentation>
+    <documentation url="http://blogs.office.com/b/microsoft-outlook/archive/2013/09/12/outlook-com-now-with-imap.aspx">
+      <descr lang="en">Blog post annoncing IMAP</descr>
+    </documentation>
   </emailProvider>
 </clientConfig>
