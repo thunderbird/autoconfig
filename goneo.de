@@ -1,0 +1,56 @@
+<clientConfig version="1.1">
+  <emailProvider id="goneo.de">
+    <!-- domain hoster, per MX -->
+    <domain>goneo.de</domain>
+    <displayName>goneo</displayName>
+    <displayShortName>goneo</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.goneo.de</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.goneo.de</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.goneo.de</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.goneo.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-encrypted</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.goneo.de</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-encrypted</authentication>
+    </outgoingServer>
+
+    <documentation url="http://wiki.goneo.de/e_mail_allgemein">
+      <descr lang="en">Generic email server settings for any client</descr>
+      <descr lang="de">Allgemeine E-Mail-Server-Einstellungen für alle Programme</descr>
+    </documentation>
+    <documentation url="http://wiki.goneo.de/mozilla_thunderbird3">
+      <descr lang="en">How to set up Thunderbird</descr>
+      <descr lang="de">Thunderbird einrichten</descr>
+    </documentation>
+    <documentation url="http://wiki.goneo.de/e-mail">
+      <descr lang="en">All email documentation</descr>
+      <descr lang="de">Alle E-Mail-Dokumentationen</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
