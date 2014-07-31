@@ -30,4 +30,13 @@
       <descr lang="en">Configuration of Thunderbird (2, 3, 3.1) and others</descr>
     </documentation>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://webmail.df.eu" />
+    <loginPageInfo url="https://webmail.df.eu">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="horde_user" />
+      <passwordField id="horde_pass" />
+      <loginButton id="login-button" name="login_button" />
+    </loginPageInfo>
+  </webMail>
 </clientConfig>

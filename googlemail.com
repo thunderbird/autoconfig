@@ -49,4 +49,16 @@
       <descr>How to configure TB 2.0 for POP3</descr>
     </documentation>
   </emailProvider>
+
+  <webMail>
+    <loginPage url="https://accounts.google.com/ServiceLogin?service=mail&amp;continue=http://mail.google.com/mail/" />
+    <loginPageInfo
+      url="https://accounts.google.com/ServiceLogin?service=mail&amp;continue=http://mail.google.com/mail/">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="Email" />
+      <passwordField id="Passwd" />
+      <loginButton id="SignIn" />
+    </loginPageInfo>
+  </webMail>
+
 </clientConfig>

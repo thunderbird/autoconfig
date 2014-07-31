@@ -34,4 +34,14 @@
       <descr>Richten Sie Ihre Email-Adresse ein</descr>
     </documentation>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://email.t-online.de" />
+    <loginPageInfo
+      url="https://accounts.login.idm.telekom.com/idmip">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="user" />
+      <passwordField id="pw_pwd" />
+      <loginButton id="pw_submit" />
+    </loginPageInfo>
+  </webMail>
 </clientConfig>

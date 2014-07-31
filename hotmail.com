@@ -55,4 +55,15 @@
       <descr lang="en">Blog post annoncing IMAP</descr>
     </documentation>
   </emailProvider>
+
+  <webMail>
+    <loginPage url="https://www.hotmail.com" />
+    <loginPageInfo url="https://www.hotmail.com">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="i0116" name="login" />
+      <passwordField id="i0118" name="passwd" />
+      <loginButton id="idSIButton9" name="SI" />
+    </loginPageInfo>
+  </webMail>
+
 </clientConfig>

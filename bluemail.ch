@@ -28,4 +28,14 @@
     </outgoingServer>
     <documentation url="http://smtphelp.bluewin.ch/swisscomdtg/setup/?"/>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://rich.sso.bluewin.ch/cp/applink/sso/Login?d=%EMAILDOMAIN%" />
+    <loginPageInfo
+      url="https://rich.sso.bluewin.ch/cp/applink/sso/Login?d=%EMAILDOMAIN%">
+      <username>%EMAILLOCALPART%</username>
+      <usernameField id="username" name="user" />
+      <passwordField name="password" />
+      <loginButton name="anmelden" />
+    </loginPageInfo>
+  </webMail>
 </clientConfig>

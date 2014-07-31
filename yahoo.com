@@ -38,4 +38,13 @@
       <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://mail.yahoo.com" />
+    <loginPageInfo url="https://mail.yahoo.com/">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="username" />
+      <passwordField id="passwd" />
+      <loginButton id=".save" />
+    </loginPageInfo>
+  </webMail>
 </clientConfig>

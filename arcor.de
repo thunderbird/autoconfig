@@ -54,4 +54,15 @@
          IMAP-Server is a Courier.
       -->
   </emailProvider>
+
+  <webMail>
+    <loginPage url="https://www.arcor.de/ums/" />
+    <loginPageInfo url="https://www.arcor.de/ums/">
+      <username>%EMAILLOCALPART%</username>
+      <usernameField name="user_name" />
+      <passwordField name="password" />
+      <loginButton name="login" />
+    </loginPageInfo>
+   </webMail>
+
 </clientConfig>

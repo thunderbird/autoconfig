@@ -42,4 +42,15 @@
       <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
+
+  <webMail>
+    <loginPage url="https://mail.aol.com" />
+    <loginPageInfo url="https://mail.aol.com">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="lgnId1" name="loginId" />
+      <passwordField id="pwdId1" name="password" />
+      <loginButton id="submitID" />
+    </loginPageInfo>
+  </webMail>
+
 </clientConfig>

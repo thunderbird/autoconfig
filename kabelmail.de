@@ -28,4 +28,16 @@
     <documentation url="http://www.kabeldeutschland.de/portal/faq/article/id/191"/>
     <!-- presse tel:+49-361-5502300 -->
   </emailProvider>
+
+  <webMail>
+    <loginPage url="https://www.kabelmail.de" />
+    <loginPageInfo
+      url="https://sso.kabelmail.de">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="user" />
+      <passwordField name="pwd" />
+      <loginButton id="btnLogin" />
+    </loginPageInfo>
+  </webMail>
+
 </clientConfig>
