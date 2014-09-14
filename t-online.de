@@ -37,7 +37,8 @@
   <webMail>
     <loginPage url="https://email.t-online.de" />
     <loginPageInfo
-      url="https://accounts.login.idm.telekom.com/idmip">
+      url="https://email.t-online.de"
+      waitForRedirectionURLPrefix="https://accounts.login.idm.telekom.com/">
       <username>%EMAILADDRESS%</username>
       <usernameField id="user" />
       <passwordField id="pw_pwd" />

@@ -57,7 +57,7 @@
       <username>%EMAILADDRESS%</username>
       <usernameField id="Email" />
       <passwordField id="Passwd" />
-      <loginButton id="SignIn" />
+      <loginButton id="signIn" />
     </loginPageInfo>
   </webMail>
 
