@@ -2,34 +2,34 @@
 <clientConfig version="1.1">
   <emailProvider id="skynet.be">
     <domain>skynet.be</domain>
-    <displayName>skynet</displayName>
-    <displayShortName>skynet</displayShortName>
+    <domain>proximus.be</domain>
+    <domain>belgacom.net</domain>
+    <domain>kidcity.be</domain>
+    <displayName>Proximus</displayName>
+    <displayShortName>Proximus</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap.skynet.be</hostname>
+      <hostname>imap.proximus.be</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop.skynet.be</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
-      <authentication>password-encrypted</authentication>
+      <hostname>pop.proximus.be</hostname>
+      <port>485</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>relay.skynet.be</hostname>
+      <hostname>relay.proximus.be</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
-    <documentation url="http://support.en.belgacom.be/app/answers/detail/a_id/14337/kw/thunderbird">
-      <descr lang="en">Thunderbird settings</descr>
-    </documentation>
-    <documentation url="http://support.en.belgacom.be/app/answers/detail/a_id/14332/kw/thunderbird">
-      <descr lang="en">SMTP works outside their network</descr>
+    <documentation url="http://support.en.proximus.be/app/answers/detail/residential/internet/e-mails/set-up-your-mailbox/a_id/13753/c/1284,1349,1372,1963">
+      <descr lang="en">Set up e-mail on your mail application</descr>
     </documentation>
   </emailProvider>
 </clientConfig>
