@@ -7,8 +7,6 @@
     <domain>google.com</domain>
     <!-- HACK. Only add ISPs with 100000+ users here -->
     <domain>jazztel.es</domain>
-    <domain>mozilla.com</domain>
-    <domain>mozillafoundation.org</domain>
     <displayName>Google Mail</displayName>
     <displayShortName>GMail</displayShortName>
     <incomingServer type="imap">
