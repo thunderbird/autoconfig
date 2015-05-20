@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="web.de">
     <domain>web.de</domain>
     <displayName>WEB.DE Freemail</displayName>
-    <displayShortName>Web.de</displayShortName>
+    <displayShortName>WEB.DE</displayShortName>
     <!-- imap officially pay only ("Web.de Club"), but works for me -->
     <incomingServer type="imap">
       <hostname>imap.web.de</hostname>
@@ -48,8 +47,9 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://hilfe.freemail.web.de/freemail/e-mail/pop3/thunderbird/">
-      <descr lang="en">Configure POP3 in Thunderbird (currently describing TB 3.0)</descr>
+    <documentation url="https://hilfe.web.de/mailprogramme/imap.html#thunderbird">
+      <descr lang="en">Configure IMAP in Thunderbird</descr>
+      <descr lang="de">IMAP in Thunderbird konfigurieren</descr>
     </documentation>
   </emailProvider>
 </clientConfig>
