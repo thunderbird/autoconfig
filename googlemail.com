@@ -14,6 +14,7 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -31,6 +32,7 @@
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
     <enable visiturl="https://mail.google.com/mail/?ui=2&amp;shva=1#settings/fwdandpop">
