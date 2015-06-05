@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="francetelecom.fr">
     <domain>wanadoo.fr</domain>
@@ -7,22 +6,22 @@
     <displayShortName>Orange</displayShortName>
     <incomingServer type="pop3">
       <hostname>pop.orange.fr</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
       <hostname>imap.orange.fr</hostname>
-      <port>143</port>
-      <socketType>plain</socketType>
+      <port>993</port>
+      <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.orange.fr</hostname>
-      <port>587</port>
-      <socketType>plain</socketType>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
       <!-- works outside the ISP network -->
