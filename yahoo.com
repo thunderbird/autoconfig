@@ -15,6 +15,7 @@
     <domain>yahoo.com.mx</domain>
     <domain>ymail.com</domain>
     <domain>rocketmail.com</domain>
+    <domain>yahoodns.net</domain>
     <displayName>Yahoo! Mail</displayName>
     <displayShortName>Yahoo</displayShortName>
     <incomingServer type="pop3">
