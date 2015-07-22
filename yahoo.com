@@ -6,6 +6,7 @@
     <domain>yahoo.it</domain>
     <domain>yahoo.fr</domain>
     <domain>yahoo.es</domain>
+    <domain>yahoo.se</domain>
     <domain>yahoo.co.uk</domain>
     <domain>yahoo.co.nz</domain>
     <domain>yahoo.com.au</domain>
