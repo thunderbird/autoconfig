@@ -44,9 +44,9 @@
     <loginPage url="https://mail.yahoo.com" />
     <loginPageInfo url="https://mail.yahoo.com/">
       <username>%EMAILADDRESS%</username>
-      <usernameField id="username" />
-      <passwordField id="passwd" />
-      <loginButton id=".save" />
+      <usernameField id="login-username" />
+      <passwordField id="login-passwd" />
+      <loginButton id="login-signin" />
     </loginPageInfo>
   </webMail>
 </clientConfig>
