@@ -7,7 +7,7 @@ Any changes where will go live and affect the new account settings of all
 TB3 users, so be careful. Be sure to read the docs above.
 
 
-Alternative configurations
+Alternative configurations (Not yet done)
 
 Some ISPs / providers have different kinds of users underneath the
 same domain, e.g. allows IMAP only for users who pay more.
