@@ -18,16 +18,16 @@
     <domain>yahoodns.net</domain>
     <displayName>Yahoo! Mail</displayName>
     <displayShortName>Yahoo</displayShortName>
-    <incomingServer type="pop3">
-      <hostname>pop.mail.yahoo.com</hostname>
-      <port>995</port>
+    <incomingServer type="imap">
+      <hostname>imap.mail.yahoo.com</hostname>
+      <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <incomingServer type="imap">
-      <hostname>imap.mail.yahoo.com</hostname>
-      <port>993</port>
+    <incomingServer type="pop3">
+      <hostname>pop.mail.yahoo.com</hostname>
+      <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
