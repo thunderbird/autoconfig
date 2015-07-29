@@ -10,7 +10,7 @@
     <displayName>Google Mail</displayName>
     <displayShortName>GMail</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap.googlemail.com</hostname>
+      <hostname>imap.gmail.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
@@ -18,7 +18,7 @@
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop.googlemail.com</hostname>
+      <hostname>pop.gmail.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
@@ -28,7 +28,7 @@
       </pop3>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.googlemail.com</hostname>
+      <hostname>smtp.gmail.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
