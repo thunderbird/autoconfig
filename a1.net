@@ -1,0 +1,22 @@
+<clientConfig version="1.1">
+  <emailProvider id="a1.net">
+    <domain>a1.net</domain>
+    <domain>aon.at</domain>
+    <displayName>a1.net</displayName>
+    <displayShortName>a1.net</displayShortName>
+    <incomingServer type="imap">
+      <hostname>securemail.a1.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>securemail.a1.net</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
