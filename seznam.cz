@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="seznam.cz">
     <domain>seznam.cz</domain>
@@ -7,20 +6,27 @@
     <domain>spoluzaci.cz</domain>
     <displayName>Seznam</displayName>
     <displayShortName>Seznam</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.seznam.cz</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.seznam.cz</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
-      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.seznam.cz</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
-      <username>%EMAILADDRESS%</username>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
     </outgoingServer>
-    <documentation url="http://napoveda.seznam.cz/cz/jake-jsou-adresy-pop3-a-smtp-serveru.html"/>
+    <documentation url="http://napoveda.seznam.cz/cz/email/imap-pop3-smtp/"/>
   </emailProvider>
 </clientConfig>
