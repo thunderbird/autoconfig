@@ -4,22 +4,6 @@
     <domain>comcast.net</domain>
     <displayName>Comcast</displayName>
     <displayShortName>Comcast</displayShortName>
-    <incomingServer type="pop3">
-      <hostname>mail.comcast.net</hostname>
-      <port>995</port>
-      <socketType>SSL</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <incomingServer type="pop3">
-      <hostname>mail.comcast.net</hostname>
-      <port>110</port>
-      <socketType>STARTTLS</socketType>
-      <username>%EMAILADDRESS%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <!-- Per comcast staff, this is a test only and doesn't work for everybody yet.
-      SSL certs are wrong, too
     <incomingServer type="imap">
       <hostname>imap.comcast.net</hostname>
       <port>993</port>
@@ -34,7 +18,20 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    -->
+    <incomingServer type="pop3">
+      <hostname>mail.comcast.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.comcast.net</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.comcast.net</hostname>
       <port>465</port>
@@ -49,7 +46,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://customer.comcast.com/help-and-support/internet/setting-up-thunderbird/">
+    <documentation url="http://customer.xfinity.com/help-and-support/internet/setting-up-thunderbird/">
       <descr lang="en">Instructions for setting up Thunderbird for use with comcast.net for home users.</descr>
       <descr lang="es">Instrucciones para instalar Thunderbird para el uso de Comcast para dueños de casa.</descr>
     </documentation>
