@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="webhuset.no">
+    <domain>webhuset.no</domain>
+    <displayName>Webhuset</displayName>
+    <displayShortName>Webhuset</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.webhuset.no</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.webhuset.no</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.webhuset.no</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.webhuset.no</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <documentation url="https://www.webhuset.no/kb/8/oppsett-for-epost-hos-oss">
+      <descr lang="en">Generic mail settings</descr>
+    </documentation>
+    <documentation url="https://www.webhuset.no/kb/8/guide-for-oppsett-av-epostkonto-i-mozilla-thunderbird">
+      <descr lang="en">Thunderbird setup guide</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
