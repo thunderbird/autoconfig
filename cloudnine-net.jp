@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
-  <emailProvider id="cty-net.ne.jp">
-    <domain>cty-net.ne.jp</domain>
-    <domain>cty-net.ne.jp</domain>
-    <domain>m2.cty-net.ne.jp</domain>
-    <domain>m3.cty-net.ne.jp</domain>
-    <domain>m4.cty-net.ne.jp</domain>
-    <domain>m5.cty-net.ne.jp</domain>
-    <domain>m6.cty-net.ne.jp</domain>
-    <domain>m7.cty-net.ne.jp</domain>
-    <domain>m8.cty-net.ne.jp</domain>
-    <domain>m9.cty-net.ne.jp</domain>
-    <domain>cty-net.com</domain>
+  <emailProvider id="cloudnine-net.jp">
+    <domain>cloudnine-net.jp</domain>
 
     <displayName>CTY Mail</displayName>
     <displayShortName>CTYMail</displayShortName>
