@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="1und1.de">
-    <!-- employees -->
-    <domain>1and1.de</domain>
     <!-- DSL customers -->
     <domain>online.de</domain>
     <domain>onlinehome.de</domain>
@@ -14,10 +12,6 @@
     <!-- Hosting customers, MX servers -->
     <domain>kundenserver.de</domain>
     <domain>schlund.de</domain>
-    <domain>1and1.com</domain>
-    <domain>1and1.fr</domain>
-    <domain>1and1.co.uk</domain>
-    <domain>1and1.es</domain>
 
     <displayName>1&amp;1</displayName>
     <displayShortName>1&amp;1</displayShortName>
