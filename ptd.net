@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<clientConfig version="1.1">
+  <emailProvider id="ptd.net">
+    <domain>ptd.net</domain>
+    <displayName>PenTeleData</displayName>
+    <displayShortName>PenTeleData</displayShortName>
+    <incomingServer type="imap">
+      <hostname>promail.ptd.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>promail.ptd.net</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>promail.ptd.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>promail.ptd.net</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>promail.ptd.net</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="http://www.ptd.net/help-desk/email-communication/how-setup-your-email">
+      <descr lang="en">How to set up email</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
