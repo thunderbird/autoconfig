@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<clientConfig version="1.1">
+	<emailProvider id="gigahost.dk">
+		<domain>gigahost.dk</domain>
+		<displayName>Gigahost Mail</displayName>
+		<displayShortName>Gigahost</displayShortName>
+		<incomingServer type="imap">
+			<hostname>mail.gigahost.dk</hostname>
+			<port>993</port>
+			<socketType>SSL</socketType>
+			<authentication>password-cleartext</authentication>
+			<username>%EMAILADDRESS%</username>
+		</incomingServer>
+		<incomingServer type="pop3">
+			<hostname>mail.gigahost.dk</hostname>
+			<port>995</port>
+			<socketType>SSL</socketType>
+			<username>%EMAILADDRESS%</username>
+			<authentication>password-cleartext</authentication>
+		</incomingServer>
+		<outgoingServer type="smtp">
+			<hostname>smtp.gigahost.dk</hostname>
+			<port>587</port>
+			<socketType>STARTTLS</socketType>
+			<authentication>password-cleartext</authentication>
+			<username>%EMAILADDRESS%</username>
+		</outgoingServer>
+		<documentation url="http://support.gigahost.dk/?cat=7">
+			<descr lang="da">Support til mail opsætning</descr>
+		</documentation>
+	</emailProvider>
+</clientConfig>
