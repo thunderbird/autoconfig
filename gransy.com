@@ -1,6 +1,7 @@
 <clientConfig version="1.1">
   <emailProvider id="gransy.com">
     <domain>gransy.com</domain>
+    <domain>internetserver.cz</domain>
     <displayName>G-Hosting.cz a Station.cz</displayName>
     <displayShortName>G-Hosting.cz a Station.cz</displayShortName>
     <incomingServer type="imap">
