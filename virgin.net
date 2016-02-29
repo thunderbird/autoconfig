@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+    <emailProvider id="virgin.net">
+      <domain>virgin.net</domain>
+      <displayName>Virgin.net: Virgin Media Mail</displayName>
+      <displayShortName>Virgin.net</displayShortName>
+
+      <incomingServer type="imap">
+         <hostname>imap4.virgin.net</hostname>
+         <port>993</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+      <incomingServer type="pop3">
+         <hostname>pop.virgin.net</hostname>
+         <port>995</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+
+      <outgoingServer type="smtp">
+         <hostname>smtp.virgin.net</hostname>
+         <port>465</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </outgoingServer>
+	  
+      <documentation url="http://help.virginmedia.com/system/web/custom/viewArticle.jsp?uuid=E7AFC426-B082-4C9E-AAFE-BD8B22824263">
+         <descr lang="en">Email settings for addresses ending in @virgin.net</descr>
+      </documentation>
+      <documentation url="http://help.virginmedia.com/system/web/custom/viewArticle.jsp?uuid=68845FEE-4C8F-49D0-B169-AB9C60AE6915">
+         <descr lang="en">Using Thunderbird with Virgin Media Mail</descr>
+      </documentation>
+    </emailProvider>
+</clientConfig>
