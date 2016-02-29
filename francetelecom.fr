@@ -1,30 +1,35 @@
 <clientConfig version="1.1">
-  <emailProvider id="francetelecom.fr">
-    <domain>wanadoo.fr</domain>
-    <domain>orange.fr</domain>
-    <displayName>France Telecom / Orange</displayName>
-    <displayShortName>Orange</displayShortName>
-    <incomingServer type="pop3">
-      <hostname>pop.orange.fr</hostname>
-      <port>995</port>
-      <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <incomingServer type="imap">
-      <hostname>imap.orange.fr</hostname>
-      <port>993</port>
-      <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-    </incomingServer>
-    <outgoingServer type="smtp">
-      <hostname>smtp.orange.fr</hostname>
-      <port>465</port>
-      <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>password-cleartext</authentication>
-      <!-- works outside the ISP network -->
-    </outgoingServer>
-  </emailProvider>
+    <emailProvider id="orange.fr">
+      <domain>orange.fr</domain>
+      <domain>wanadoo.fr</domain>
+      <displayName>Orange</displayName>
+      <displayShortName>Orange</displayShortName>
+
+      <incomingServer type="imap">
+         <hostname>imap.orange.fr</hostname>
+         <port>993</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+      <incomingServer type="pop3">
+         <hostname>pop.orange.fr</hostname>
+         <port>995</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </incomingServer>
+
+      <outgoingServer type="smtp">
+         <hostname>smtp.orange.fr</hostname>
+         <port>465</port>
+         <socketType>SSL</socketType>
+         <authentication>password-cleartext</authentication>
+         <username>%EMAILADDRESS%</username>
+      </outgoingServer>
+	  
+      <documentation url="https://assistance.orange.fr/ordinateurs-peripheriques/installer-et-utiliser/l-utilisation-du-mail-et-du-cloud/mail/les-logiciels-de-messagerie/thunderbird/thunderbird-pc-creer-un-compte-de-messagerie_65963-66803">
+         <descr lang="fr">Thunderbird (PC) : créer un compte de messagerie</descr>
+      </documentation>
+    </emailProvider>
 </clientConfig>
