@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="runestone.net">
+    <domain>runestone.net</domain>
+    <displayName>Runestone Telecom Association</displayName>
+    <displayShortName>Runestone</displayShortName>
+    <incomingServer type="pop3">
+      <hostname>mail.runestone.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILLOCALPART%</username>
+      <pop3>
+        <leaveMessagesOnServer>false</leaveMessagesOnServer>
+        <!-- Recommended setting. See bug 857103 on Bugzilla@Mozilla https://bugzilla.mozilla.org/show_bug.cgi?id=857103 for more info. -->
+      </pop3>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.runestone.net</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
