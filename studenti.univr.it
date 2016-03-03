@@ -4,19 +4,34 @@
     <domain>studenti.univr.it</domain>
     <displayName>Università degli Studi di Verona</displayName>
     <displayShortName>UniVR</displayShortName>
+    <incomingServer type="imap">
+      <hostname>univr.mail.cineca.it</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
-      <hostname>mail.studenti.univr.it</hostname>
+      <hostname>univr.mail.cineca.it</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>mail.studenti.univr.it</hostname>
+      <hostname>univr.smtpauth.cineca.it</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="http://www.univr.it/documenti/Documento/allegati/allegati820269.pdf">
+      <descr lang="en">Configure Mozilla Thunderbird to access your University of Verona mailbox (instructions in Italian)</descr>
+      <descr lang="it">Configura Mozilla Thunderbird per accedere alla tua casella dell'Università degli Studi di Verona</descr>
+    </documentation>
+    <documentation url="http://www.univr.it/documenti/Documento/allegati/allegati030972.pdf">
+      <descr lang="en">Technical specifications</descr>
+      <descr lang="it">Specifiche tecniche</descr>
+    </documentation>
   </emailProvider>
 </clientConfig>
