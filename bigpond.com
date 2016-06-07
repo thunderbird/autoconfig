@@ -5,24 +5,31 @@
     <domain>bigpond.net.au</domain>
     <domain>telstra.com</domain>
     <domain>bigpond.net</domain>
-    <displayName>Telstra Bigpond</displayName>
-    <displayShortName>Bigpond</displayShortName>
+    <displayName>Telstra Mail</displayName>
+    <displayShortName>TMail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.telstra.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>plain</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
-      <hostname>mail.bigpond.com</hostname>
+      <hostname>pop.telstra.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>plain</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>mail.bigpond.com</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
+      <hostname>smtp.telstra.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>plain</authentication>
     </outgoingServer>
   </emailProvider>
-  <documentation url="http://bigpond.custhelp.com/cgi-bin/bigpond.cfg/php/enduser/std_adp.php?p_faqid=672">
-    <descr lang="en">Generic email settings</descr>
+  <documentation url="https://www.telstra.com.au/support/category/email/telstra-mail/recommended-email-settings-for-telstra-mail">
+    <descr lang="en">Recommended email settings</descr>
   </documentation>
 </clientConfig>
