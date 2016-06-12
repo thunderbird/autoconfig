@@ -12,21 +12,21 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>plain</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop.telstra.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>plain</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.telstra.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>plain</authentication>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
   <documentation url="https://www.telstra.com.au/support/category/email/telstra-mail/recommended-email-settings-for-telstra-mail">
