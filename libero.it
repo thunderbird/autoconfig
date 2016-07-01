@@ -1,34 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <clientConfig version="1.1">
   <emailProvider id="libero.it">
     <domain>libero.it</domain>
     <domain>iol.it</domain>
     <domain>blu.it</domain>
     <domain>inwind.it</domain>
+    <domain>giallo.it</domain>
     <displayName>Libero Mail</displayName>
     <displayShortName>Libero</displayShortName>
     <incomingServer type="imap">
       <hostname>imapmail.libero.it</hostname>
-      <port>143</port>
-      <socketType>plain</socketType>
+      <port>993</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>popmail.libero.it</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.libero.it</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://aiuto.libero.it/mail/istruzioni/configura-mozilla-thunderbird-per-windows-a11.phtml"/>
-    <documentation url="http://aiuto.libero.it/mail/utilizzo-di-un-client/faq/5388.phtml"/>
+    <documentation url="http://aiuto.libero.it/articolo/mail/parametri-di-configurazione-per-il-client-di-posta/"/>
   </emailProvider>
 </clientConfig>
