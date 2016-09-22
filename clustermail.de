@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="clustermail.de">
+    <domain>clustermail.de</domain>
+    <displayName>Clustermail</displayName>
+    <displayShortName>Clustermail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.clustermail.de</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.clustermail.de</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.clustermail.de</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mail.clustermail.de</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.clustermail.de</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.clustermail.de</hostname>
+      <port>25</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-encrypted</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <documentation url="https://ratiokontakt.de/news/2015/01/01/faq-wie-muss-mein-e-mail-client-konfiguriert-werden/">
+      <descr lang="de">Allgemeine Beschreibung der Einstellungen</descr>
+      <descr lang="en">Generic settings page</descr>
+    </documentation>
+    <documentation url="https://ratiokontakt.de/news/2015/01/01/faq-wie-muss-mein-e-mail-client-konfiguriert-werden/">
+      <descr lang="de">TB 2.0 IMAP-Einstellungen</descr>
+      <descr lang="en">TB 2.0 IMAP settings</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
