@@ -1,3 +1,6 @@
+Server at https://autoconfig.thunderbird.net will update when the `prod` branch is pushed. 
+Master only updates stage, which does not yet exist.
+
 https://wiki.mozilla.org/MailServerList
 https://developer.mozilla.org/en/Thunderbird/Autoconfiguration
 https://wiki.mozilla.org/Thunderbird:Autoconfiguration
