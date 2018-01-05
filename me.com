@@ -2,6 +2,7 @@
   <emailProvider id="me.com">
     <domain>mac.com</domain>
     <domain>me.com</domain>
+    <domain>icloud.com</domain>
     <displayName>Apple iCloud</displayName>
     <displayShortName>Apple</displayShortName>
     <incomingServer type="imap">
