@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="yahoo.com">
     <domain>yahoo.com</domain>
@@ -23,6 +22,7 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -30,6 +30,7 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
@@ -37,8 +38,15 @@
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://help.yahoo.com/kb/new-mail-for-desktop/imap-server-settings-yahoo-mail-sln4075.html">
+      <descr lang="en">How to setup email applications with imap to receive Yahoo! mail?</descr>
+    </documentation>
+    <documentation url="https://help.yahoo.com/kb/new-mail-for-desktop/pop-access-settings-instructions-yahoo-mail-sln4724.html">
+      <descr lang="en">How to setup email applications with pop to receive Yahoo! mail?</descr>
+    </documentation>
   </emailProvider>
   <webMail>
     <loginPage url="https://mail.yahoo.com" />
