@@ -26,6 +26,9 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://smtphelp.bluewin.ch/"/>
+    <documentation url="http://smtphelp.bluewin.ch/" />
   </emailProvider>
+  <webMail>
+    <loginPage url="https://webmail.bluewin.ch/" />
+  </webMail>
 </clientConfig>
