@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
-  <emailProvider id="Swisscom">
+  <emailProvider id="swisscom.ch">
     <domain>bluewin.ch</domain>
     <domain>bluemail.ch</domain>
     <displayName>Bluewin Mail</displayName>
