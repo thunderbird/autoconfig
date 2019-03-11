@@ -1,0 +1,54 @@
+[
+  {
+    "id": "owl@beonex.com",
+    "name": {
+      "en": "Owl",
+      "en-US": "Owl",
+      "en-GB": "Owl",
+      "de": "Eule",
+      "fr": "Chouette",
+      "it": "Gufo",
+      "es": "Aluco",
+      "es-ES": "Aluco",
+      "es-AR": "Aluco",
+      "pt": "Coruja",
+      "pt-PT": "Coruja",
+      "pt-BR": "Coruja",
+      "pl": "Sowa",
+      "ru": "Сова",
+      "hu": "Bagoly",
+      "ja": "フクロウ",
+      "ja-JP": "フクロウ"
+    },
+    "description": {
+      "en": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "en-US": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "en-GB": "Owl is a paid third-party addon that allows you to access your email account on Exchange servers. See the website for prices.",
+      "de": "Eule ist eine Erweiterung von einem Drittanbieter, die Ihnen erlaubt, einen Exchange-Server zu benutzen. Sie ist kostenpflichtig. Die Preise finden sie auf der Webseite.",
+      "fr": "Chouette est une extension tierce payante qui vous permets d'accéder à votre adresse mail sur les serveurs Exchange. Voir le site pour les prix.",
+      "it": "Gufo è un componente aggiuntivo a pagamento che ti permette di accedere al tuo account email sul server di Exchange. Per i prezzi guardate il sito web.",
+      "es": "Aluco es un complemento pago de terceros que te permite acceder a tu cuenta de correo electrónico en los servidores de Exchange. Consulta el sitio web para ver los precios.",
+      "es-ES": "Aluco es un complemento pago de terceros que te permite acceder a tu cuenta de correo electrónico en los servidores de Exchange. Consulta el sitio web para ver los precios.",
+      "es-AR": "Aluco es un complemento pago de terceros que te permite acceder a tu cuenta de correo electrónico en los servidores de Exchange. Consulta el sitio web para ver los precios.",
+      "pt": "Coruja é uma extensão de terceiros que permite o acesso da sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pt-PT": "Coruja é uma extensão de terceiros que permite o acesso da sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pt-BR": "Coruja é uma extensão de terceiros que permite o acesso da sua conta de e-mail nos servidores Exchange. Veja o site para preços.",
+      "pl": "Sowa jest płatnym dodatkiem, który zapewni dostęp do kont e-mail prowadzonych w programie Exchange Server. Ceny są podane na naszej stronie.",
+      "hu": "A bagoly egy fizetett harmadik fél kiegészítője, amely lehetővé teszi az e-mail fiókhoz való hozzáférést az Exchange kiszolgálókon. Látogasson el a weboldalra az árakért.",
+      "ru": "Сова - платное стороннее дополнение, которое позволяет вам получить доступ к вашей электронной почте на серверах Exchange. С ценами вы можете ознакомиться на сайте.",
+      "ja": "フクロウは第三者による有料アドオンプログラムであり、Exchangeサーバー上であなたのメールアカウントにアクセスできるようにするものです。値段はウェブサイトに示してあります。",
+      "ja-JP": "フクロウは第三者による有料アドオンプログラムであり、Exchangeサーバー上であなたのメールアカウントにアクセスできるようにするものです。値段はウェブサイトに示してあります。"
+    },
+    "minVersion": "0.5",
+    "xpiURL": "https://addons.thunderbird.net/thunderbird/downloads/latest/owl-for-exchange/addon-986325-latest.xpi?src=thunderbird-accountcreation",
+    "websiteURL": "https://www.beonex.com/owl/?origin=thunderbird",
+    "icon32": "data:image/png;base64,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",
+    "accountTypes": [
+      {
+        "generalType": "exchange",
+        "protocolType": "owa",
+        "addonAccountType": "owl"
+      }
+    ]
+  }
+]
