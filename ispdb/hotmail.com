@@ -21,14 +21,14 @@
     <displayName>Outlook.com (Microsoft)</displayName>
     <displayShortName>Outlook</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap-mail.outlook.com</hostname>
+      <hostname>outlook.office365.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop-mail.outlook.com</hostname>
+      <hostname>outlook.office365.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
@@ -39,7 +39,7 @@
       </pop3>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp-mail.outlook.com</hostname>
+      <hostname>smtp.office365.com</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <authentication>password-cleartext</authentication>
