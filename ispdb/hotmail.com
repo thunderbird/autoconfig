@@ -20,6 +20,15 @@
     <domain>outlook.com</domain>
     <displayName>Outlook.com (Microsoft)</displayName>
     <displayShortName>Outlook</displayShortName>
+    <incomingServer type="exchange">
+      <hostname>outlook.office365.com</hostname>
+      <port>443</port>
+      <username>%EMAILADDRESS%</username>
+      <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
+      <owaURL>https://outlook.office365.com/owa/</owaURL>
+      <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
+    </incomingServer>
     <incomingServer type="imap">
       <hostname>outlook.office365.com</hostname>
       <port>993</port>
