@@ -28,6 +28,7 @@
       <authentication>OAuth2</authentication>
       <owaURL>https://outlook.office365.com/owa/</owaURL>
       <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
+      <useGlobalPreferredServer>true</useGlobalPreferredServer>
     </incomingServer>
     <incomingServer type="imap">
       <hostname>outlook.office365.com</hostname>
