@@ -15,16 +15,6 @@
     <domain>outlook.com</domain>
     <displayName>Microsoft</displayName>
     <displayShortName>Microsoft</displayShortName>
-    <incomingServer type="exchange">
-      <hostname>outlook.office365.com</hostname>
-      <port>443</port>
-      <username>%EMAILADDRESS%</username>
-      <socketType>SSL</socketType>
-      <authentication>OAuth2</authentication>
-      <owaURL>https://outlook.office365.com/owa/</owaURL>
-      <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
-      <useGlobalPreferredServer>true</useGlobalPreferredServer>
-    </incomingServer>
     <incomingServer type="imap">
       <hostname>outlook.office365.com</hostname>
       <port>993</port>
@@ -42,6 +32,16 @@
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
         <!-- Outlook.com docs specifically mention that POP3 deletes have effect on the main inbox on webmail and IMAP -->
       </pop3>
+    </incomingServer>
+    <incomingServer type="exchange">
+      <hostname>outlook.office365.com</hostname>
+      <port>443</port>
+      <username>%EMAILADDRESS%</username>
+      <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
+      <owaURL>https://outlook.office365.com/owa/</owaURL>
+      <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
+      <useGlobalPreferredServer>true</useGlobalPreferredServer>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.office365.com</hostname>
