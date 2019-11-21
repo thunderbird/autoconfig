@@ -34,6 +34,7 @@
       <owaURL>https://outlook.office365.com/owa/</owaURL>
       <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
       <useGlobalPreferredServer>true</useGlobalPreferredServer>
+      <fallbackOnly>true</fallbackOnly>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.office365.com</hostname>
