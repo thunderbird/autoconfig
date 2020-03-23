@@ -2,11 +2,21 @@
 <clientConfig version="1.1">
   <emailProvider id="inbox.lv">
     <domain>inbox.lv</domain>
-    <!-- Same as inbox.lt TODO merge? -->
-    <displayName>Inbox.lv</displayName>
-    <displayShortName>Inbox.lv</displayShortName>
+    <domain>inbox.eu</domain>
+    <domain>inbox.lt</domain>
+    <domain>mail.ee</domain>
+    <domain>inbox.la</domain>
+    <displayName>%EMAILDOMAIN%</displayName>
+    <displayShortName>%EMAILDOMAIN%</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.%EMAILDOMAIN%</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
     <incomingServer type="pop3">
-      <hostname>mail.inbox.lv</hostname>
+      <hostname>mail.%EMAILDOMAIN%</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
@@ -16,11 +26,26 @@
       </pop3>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>mail.inbox.lv</hostname>
+      <hostname>mail.%EMAILDOMAIN%</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://help.%EMAILDOMAIN%/?keyword=email_clients_settings">
+       <descr lang="en">Configure Thunderbird 2.0 for IMAP/POP3/SMTP</descr>
+       <descr lang="lv">E-pasta klientu konfigurācija (IMAP/POP3/SMTP)</descr>
+       <descr lang="lt">Pašto programų nustatymai (IMAP, POP3, SMTP)</descr>
+       <descr lang="ru">Настройки для почтовых программ (IMAP, POP3,SMTP и др.)</descr>
+    </documentation>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://login.%EMAILDOMAIN%" />
+    <loginPageInfo url="https://login.%EMAILDOMAIN%">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="userName" name="imapuser" />
+      <passwordField id="password" name="pass"/>
+      <loginButton id="implogin__btn_sign-in"/>
+    </loginPageInfo>
+  </webMail>
 </clientConfig>
