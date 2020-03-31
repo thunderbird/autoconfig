@@ -5,6 +5,7 @@
     <domain>inbox.eu</domain>
     <domain>inbox.lt</domain>
     <domain>inbox.la</domain>
+    <domain>tvnet.lv</domain>
     <displayName>%EMAILDOMAIN%</displayName>
     <displayShortName>%EMAILDOMAIN%</displayShortName>
     <incomingServer type="imap">
@@ -18,7 +19,7 @@
       <hostname>mail.%EMAILDOMAIN%</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
       <pop3>
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
@@ -28,7 +29,7 @@
       <hostname>mail.%EMAILDOMAIN%</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
     <documentation url="https://help.%EMAILDOMAIN%/?keyword=email_clients_settings">
