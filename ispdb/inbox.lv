@@ -5,7 +5,6 @@
     <domain>inbox.eu</domain>
     <domain>inbox.lt</domain>
     <domain>inbox.la</domain>
-    <domain>tvnet.lv</domain>
     <displayName>%EMAILDOMAIN%</displayName>
     <displayShortName>%EMAILDOMAIN%</displayShortName>
     <incomingServer type="imap">
@@ -27,17 +26,24 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>mail.%EMAILDOMAIN%</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="https://help.%EMAILDOMAIN%/?keyword=email_clients_settings">
+    <documentation url="https://help.inbox.lv/?keyword=email_clients_settings">
        <descr lang="en">Configure Thunderbird 2.0 for IMAP/POP3/SMTP</descr>
        <descr lang="lv">E-pasta klientu konfigurācija (IMAP/POP3/SMTP)</descr>
        <descr lang="lt">Pašto programų nustatymai (IMAP, POP3, SMTP)</descr>
        <descr lang="ru">Настройки для почтовых программ (IMAP, POP3,SMTP и др.)</descr>
     </documentation>
+    <enable visiturl="https://help.inbox.lv/?keyword=email_clients_access">
+      <instruction>Enable external POP3/IMAP and SMTP access in your account settings</instruction>
+      <instruction lang="lv">Ieslēgt POP3/IMAP pieeju savam kontam</instruction>
+      <instruction lang="ru">Доступ POP3/IMAP, пароль для почтовой программы</instruction>
+      <instruction lang="lt">POP3/IMAP prieiga, pašto programų slaptažodis</instruction>
+      <instruction lang="et">POP3/IMAP juurdepääs, e-posti programmi parool</instruction>
+    </enable>
   </emailProvider>
   <webMail>
     <loginPage url="https://login.%EMAILDOMAIN%" />
