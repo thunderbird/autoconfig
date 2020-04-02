@@ -4,8 +4,8 @@ It contains the server names and configuation for almost all large ISPs in the w
 
 Be sure to read the docs below before changing anything:
 * [Autoconfig mechanism documentation](https://developer.mozilla.org/en/Thunderbird/Autoconfiguration), including file format definition and explanations.
-* [How to configure your domain](https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration#Configuration_server_at_ISP) without being added to the ISPDB here. This is useful for domains that are not open to the public.
-* [Original project page - outdated, for reference only](https://wiki.mozilla.org/Thunderbird:Autoconfiguration)
+* [How to configure your domain](https://developer.mozilla.org/en-US/docs/Mozilla/Thunderbird/Autoconfiguration#Configuration_server_at_ISP) without being added to the ISPDB here. This is useful for small ISPs and domains that are not open to the public.
+* [Original project page - for reference](https://wiki.mozilla.org/Thunderbird:Autoconfiguration)
 
 This ISPDB was created and is maintained by Ben Bucksch.
 
