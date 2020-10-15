@@ -3,6 +3,10 @@
     <domain>aol.com</domain>
     <domain>aim.com</domain>
     <domain>netscape.net</domain>
+    <domain>netscape.com</domain>
+    <domain>compuserve.com</domain>
+    <domain>cs.com</domain>
+    <domain>wmconnect.com</domain>
     <displayName>AOL Mail</displayName>
     <displayShortName>AOL</displayShortName>
     <incomingServer type="imap">
