@@ -53,6 +53,18 @@
     </documentation>
   </emailProvider>
 
+  <addressBook type="carddav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>OAuth2</authentication>
+    <serverURL>https://www.googleapis.com/.well-known/carddav<serverURL>
+  </addressBook>
+
+  <calendar type="caldav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>OAuth2</authentication>
+    <serverURL>https://apidata.googleusercontent.com/caldav/v2/%EMAILADDRESS%/events<serverURL>
+  </calendar>
+
   <oAuth2>
     <issuer>accounts.google.com</issuer>
     <!-- https://developers.google.com/identity/protocols/oauth2/scopes -->
