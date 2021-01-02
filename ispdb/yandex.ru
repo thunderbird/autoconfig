@@ -9,8 +9,10 @@
     <domain>yandex.ua</domain>
     <domain>ya.ru</domain>
     <domain>narod.ru</domain>
+
     <displayName>Yandex Mail</displayName>
     <displayShortName>Yandex</displayShortName>
+
     <incomingServer type="imap">
       <hostname>imap.yandex.com</hostname>
       <port>993</port>
@@ -32,8 +34,16 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <enable visiturl="http://mail.yandex.ru/neo/setup_client">
-      <instruction>Check 'Enable IMAP' on Yandex.Mail setup page</instruction>
-    </enable>
   </emailProvider>
+
+  <oAuth2>
+    <issuer>oauth.yandex.com</issuer>
+    <scope>mail:imap_full mail:smtp</scope>
+    <authURL>https://oauth.yandex.com/authorize</authURL>
+    <tokenURL>https://oauth.yandex.com/token</tokenURL>
+  </oAuth2>
+
+  <enable visiturl="http://mail.yandex.ru/neo/setup_client">
+    <instruction>Check 'Enable IMAP' on Yandex.Mail setup page</instruction>
+  </enable>
 </clientConfig>

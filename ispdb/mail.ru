@@ -6,8 +6,10 @@
     <domain>list.ru</domain>
     <domain>bk.ru</domain>
     <domain>corp.mail.ru</domain>
+
     <displayName>mail.ru</displayName>
     <displayShortName>mail.ru</displayShortName>
+
     <incomingServer type="imap">
       <hostname>imap.mail.ru</hostname>
       <port>993</port>
@@ -54,8 +56,17 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+
+    <documentation url="http://help.mail.ru/mail-help/mailer/mt">
+      <descr lang="en">IMAP, POP, Thunderbird, with screenshots</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="http://help.mail.ru/mail-help/mailer/mt">
-    <descr lang="en">IMAP, POP, Thunderbird, with screenshots</descr>
-  </documentation>
+
+  <oAuth2>
+    <issuer>o2.mail.ru</issuer>
+    <scope>mail.imap</scope>
+    <authURL>https://o2.mail.ru/login</authURL>
+    <tokenURL>https://o2.mail.ru/token</tokenURL>
+  </oAuth2>
+
 </clientConfig>
