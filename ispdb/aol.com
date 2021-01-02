@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="aol.com">
     <domain>aol.com</domain>
@@ -7,8 +8,10 @@
     <domain>compuserve.com</domain>
     <domain>cs.com</domain>
     <domain>wmconnect.com</domain>
+
     <displayName>AOL Mail</displayName>
     <displayShortName>AOL</displayShortName>
+
     <incomingServer type="imap">
       <hostname>imap.aol.com</hostname>
       <port>993</port>
@@ -33,10 +36,19 @@
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
+
     <documentation url="https://help.aol.com/articles/how-do-i-use-other-email-applications-to-send-and-receive-my-aol-mail">
       <descr lang="en">How do I set up other email applications to send and receive my AOL Mail?</descr>
     </documentation>
   </emailProvider>
+
+  <oAuth2>
+    <issuer>login.aol.com</issuer>
+    <scope>mail-w</scope>
+    <authURL>https://api.login.aol.com/oauth2/request_auth</authURL>
+    <tokenURL>https://api.login.aol.com/oauth2/get_token</tokenURL>
+  </oAuth2>
+
   <webMail>
     <loginPage url="https://mail.aol.com/"/>
     <loginPageInfo url="https://mail.aol.com/">
