@@ -7,6 +7,19 @@
     <domain>compuserve.com</domain>
     <domain>cs.com</domain>
     <domain>wmconnect.com</domain>
+    <domain>aol.de</domain>
+    <domain>aol.it</domain>
+    <domain>aol.fr</domain>
+    <domain>aol.es</domain>
+    <domain>aol.se</domain>
+    <domain>aol.co.uk</domain>
+    <domain>aol.co.nz</domain>
+    <domain>aol.com.au</domain>
+    <domain>aol.com.ar</domain>
+    <domain>aol.com.br</domain>
+    <domain>aol.com.mx</domain>
+    <!-- MX -->
+    <domain>mx-aol.mail.gm0.yahoodns.net</domain>
     <displayName>AOL Mail</displayName>
     <displayShortName>AOL</displayShortName>
     <incomingServer type="imap">

@@ -14,6 +14,13 @@
     <domain>yahoo.com.mx</domain>
     <domain>ymail.com</domain>
     <domain>rocketmail.com</domain>
+    <!-- MX -->
+    <domain>mx-eu.mail.am0.yahoodns.net</domain>
+    <domain>mta5.am0.yahoodns.net</domain>
+    <domain>mta6.am0.yahoodns.net</domain>
+    <domain>mta7.am0.yahoodns.net</domain>
+    <!-- Thunderbird does not look up every domain level for MX, only second-level domains for MX and complete MX hostnames. -->
+    <!-- Unfortunately, also used for AOL :-( -->
     <domain>yahoodns.net</domain>
     <displayName>Yahoo! Mail</displayName>
     <displayShortName>Yahoo</displayShortName>
