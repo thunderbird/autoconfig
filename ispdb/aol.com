@@ -19,7 +19,7 @@
     <domain>aol.com.br</domain>
     <domain>aol.com.mx</domain>
     <!-- MX -->
-    <domain>mx-aol.mail.gm0.yahoodns.net</domain>
+    <domain>mail.gm0.yahoodns.net</domain>
     <displayName>AOL Mail</displayName>
     <displayShortName>AOL</displayShortName>
     <incomingServer type="imap">
