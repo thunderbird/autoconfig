@@ -56,7 +56,7 @@
   <oAuth2>
     <issuer>accounts.google.com</issuer>
     <!-- https://developers.google.com/identity/protocols/oauth2/scopes -->
-    <scope>https://mail.google.com/ https://www.googleapis.com/auth/contacts https://www.googleapis.com/auth/carddav</scope>
+    <scope>https://mail.google.com/ https://www.googleapis.com/auth/contacts https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/carddav</scope>
     <authURL>https://accounts.google.com/o/oauth2/auth</authURL>
     <tokenURL>https://www.googleapis.com/oauth2/v3/token</tokenURL>
   </oAuth2>
