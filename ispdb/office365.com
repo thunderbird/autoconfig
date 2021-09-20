@@ -49,6 +49,7 @@
   <oAuth2>
     <issuer>login.microsoftonline.com</issuer>
     <scope>https://outlook.office365.com/IMAP.AccessAsUser.All https://outlook.office365.com/POP.AccessAsUser.All https://outlook.office365.com/SMTP.Send offline_access</scope>
+    <!-- https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols#endpoints -->
     <authURL>https://login.microsoftonline.com/common/oauth2/v2.0/authorize</authURL>
     <tokenURL>https://login.microsoftonline.com/common/oauth2/v2.0/token</tokenURL>
   </oAuth2>
