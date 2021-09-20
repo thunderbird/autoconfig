@@ -6,21 +6,21 @@
     <displayName>domainFACTORY</displayName>
     <displayShortName>domainFACTORY</displayShortName>
     <incomingServer type="imap">
-      <hostname>sslmailpool.ispgateway.de</hostname>
+      <hostname>sslin.df.eu</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>sslmailpool.ispgateway.de</hostname>
+      <hostname>sslin.df.eu</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtprelaypool.ispgateway.de</hostname>
+      <hostname>sslout.df.eu</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
