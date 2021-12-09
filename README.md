@@ -1,4 +1,6 @@
-ISPDB - Generic database of mail server configuration
+# Mozilla Thunderbird ISPDB for Autoconfig
+
+Generic database of mail server configuration
 
 It contains the server names and configuation for almost all large ISPs in the world. Most ISPs with a user base of more than 0.1% are included here.
 
