@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
-    <emailProvider id="sapo.pt">	
-      <domain>sapo.pt</domain> 
-      <domain>sapo.cv</domain>		
+    <emailProvider id="sapo.pt">
+      <domain>sapo.pt</domain>
+      <domain>sapo.cv</domain>
       <domain>sapo.ao</domain>
       <domain>sapo.mz</domain>
       <domain>sapo.tl</domain>
-      <domain>meo.pt</domain>	   
+      <domain>meo.pt</domain>
       <displayName>SAPO Mail</displayName>
       <displayShortName>SAPO</displayShortName>
       <incomingServer type="imap">
@@ -15,7 +15,7 @@
          <socketType>SSL</socketType>
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
-      </incomingServer>	  
+      </incomingServer>
       <incomingServer type="pop3">
          <hostname>pop.sapo.pt</hostname>
          <port>995</port>
@@ -29,7 +29,7 @@
          <socketType>SSL</socketType>
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
-      </outgoingServer>  
+      </outgoingServer>
       <documentation url="https://ajuda.sapo.pt/configurar-programa-de-email-70015">
          <descr lang="en">E-mail settings for addresses ending in @sapo.pt</descr>
       </documentation>
