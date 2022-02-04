@@ -3,7 +3,6 @@
       <domain>wp.pl</domain>
       <displayName>Poczta Wirtualna Polska</displayName>
       <displayShortName>Poczta WP</displayShortName>
-
       <incomingServer type="imap">
          <hostname>imap.wp.pl</hostname>
          <port>993</port>
@@ -18,7 +17,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILLOCALPART%</username>
       </incomingServer>
-
       <outgoingServer type="smtp">
          <hostname>smtp.wp.pl</hostname>
          <port>465</port>
@@ -26,7 +24,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILLOCALPART%</username>
       </outgoingServer>
-	  
       <documentation url="http://poczta.wp.pl/info-pomoc-konfig.html?action=more&amp;id=157">
          <descr lang="pl">konfiguracja programów pocztowych (Mozilla Thunderbird)</descr>
       </documentation>
