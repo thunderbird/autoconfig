@@ -41,9 +41,9 @@
             SMTP send limit:            500 per hour
             IP-based email send limit:  300 per day
 
-			"Email Size Limit" refers to the size of a single email, and "Sent To Limits" 
-			 include the To, CC and Bcc fields in emails. These limits are the same whether 
-			 you're using webmail or SMTP.
+                         "Email Size Limit" refers to the size of a single email, and "Sent To Limits" 
+                         include the To, CC and Bcc fields in emails. These limits are the same whether 
+                         you're using webmail or SMTP.
       -->
     <documentation url="http://www.centurylink.com/help/index.php?assetid=239">
       <descr lang="en">CenturyLink | How to set up your email to go through POP3 and SMTP</descr>
