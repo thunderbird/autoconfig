@@ -4,7 +4,6 @@
       <domain>ntlworld.com</domain>
       <displayName>NTL World: Virgin Media Mail</displayName>
       <displayShortName>NTL World</displayShortName>
-
       <incomingServer type="imap">
          <hostname>imap.ntlworld.com</hostname>
          <port>993</port>
@@ -19,7 +18,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
       </incomingServer>
-
       <outgoingServer type="smtp">
          <hostname>smtp.ntlworld.com</hostname>
          <port>465</port>
@@ -27,7 +25,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
       </outgoingServer>
-	  
       <documentation url="http://help.virginmedia.com/system/web/custom/viewArticle.jsp?uuid=C30B1D91-FA00-48EE-928A-A77F7C7D1EFA">
          <descr lang="en">Email settings for addresses ending in @ntlworld.com</descr>
       </documentation>
