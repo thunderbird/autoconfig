@@ -12,8 +12,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable IMAP Access for your account  
-	     before you begin the configuration in the email client.  -->
+    <!-- You must enable IMAP Access for your account before you begin the configuration in the email client.  -->
     <incomingServer type="pop3">
       <hostname>pop.zoho.com</hostname>
       <port>995</port>
@@ -21,8 +20,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable POP Access for your account  
-	     before you begin the configuration in the email client.  -->
+    <!-- You must enable POP Access for your account before you begin the configuration in the email client.  -->
     <outgoingServer type="smtp">
       <hostname>smtp.zoho.com</hostname>
       <port>465</port>
