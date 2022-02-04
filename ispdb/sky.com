@@ -4,7 +4,6 @@
       <domain>sky.com</domain>
       <displayName>Sky Mail</displayName>
       <displayShortName>Sky</displayShortName>
-
       <incomingServer type="imap">
          <hostname>imap.tools.sky.com</hostname>
          <port>993</port>
@@ -19,7 +18,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
       </incomingServer>
-
       <outgoingServer type="smtp">
          <hostname>smtp.tools.sky.com</hostname>
          <port>465</port>
@@ -27,7 +25,6 @@
          <authentication>password-cleartext</authentication>
          <username>%EMAILADDRESS%</username>
       </outgoingServer>
-	  
       <documentation url="http://help.sky.com/articles/get-emails-on-other-clients?product=email">
          <descr lang="en">Configure Thunderbird for IMAP or POP3</descr>
       </documentation>
