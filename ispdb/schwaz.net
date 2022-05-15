@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="schwaz.net">
+    <domain>schwaz.net</domain>
+    <displayName>schwaz.net | Stadtwerke Schwaz</displayName>
+    <displayShortName>schwaz.net</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.schwaz.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.schwaz.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.schwaz.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.schwaz.net</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://stadtwerkeschwaz.at/schwaz-net/anleitungen#Einstellungen">
+      <descr lang="en">Configuration for eMail programs</descr>
+      <descr lang="de">Einstellungen eMail-Programm</descr>
+    </documentation>
+  </emailProvider>
+  <webMail>
+    <loginPage url="https://webmail.schwaz.net/?login=" />
+    <loginPageInfo url="https://webmail.schwaz.net/?login=">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="username" />
+      <passwordField id="password" />
+      <loginButton name="submit" />
+    </loginPageInfo>
+  </webMail>
+</clientConfig>
