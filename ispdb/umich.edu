@@ -3,7 +3,7 @@
 	<emailProvider id="umich.edu">
 		<domain>umich.edu</domain>
 		<displayName>University of Michigan</displayName>
-		<displayShortName>umich.edu</displayShortName>
+		<displayShortName>UMich</displayShortName>
 		<incomingServer type="imap">
 			<hostname>imap.gmail.com</hostname>
 			<port>993</port>
