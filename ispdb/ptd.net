@@ -46,13 +46,6 @@
             <username>%EMAILLOCALPART%</username>
             <authentication>password-cleartext</authentication>
         </outgoingServer>
-        <outgoingServer type="smtp">
-            <hostname>promail.ptd.net</hostname>
-            <port>25</port>
-            <socketType>STARTTLS</socketType>
-            <username>%EMAILLOCALPART%</username>
-            <authentication>password-cleartext</authentication>
-        </outgoingServer>
         <documentation url="https://www.ptd.net/support/email-communication/how-setup-your-email">
             <descr lang="en">How to set up your email</descr>
         </documentation>
