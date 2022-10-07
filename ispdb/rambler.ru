@@ -27,9 +27,9 @@
     </outgoingServer>
   </emailProvider>
   <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1277/">
-    <descr lang="ru">How to set up Mozilla Thunderbird?</descr>
+    <descr lang="ru">Как настроить Mozilla Thunderbird?</descr>
   </documentation>
   <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1275/">
-    <descr lang="ru">General settings for email clients</descr>
+    <descr lang="ru">Общие настройки для почтовых клиентов</descr>
   </documentation>
 </clientConfig>
