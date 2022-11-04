@@ -38,8 +38,12 @@ def read_config(file, convertTime):
     return (ET.parse(file), max(os.stat(file).st_mtime, convertTime))
 
 
+def doc_to_bytestring(doc):
+    return ET.tostring(doc.getroot(), encoding="UTF-8")
+
+
 def print_config(doc):
-    print(doc.toxml(encoding="UTF-8"))
+    print(ET.tostring(doc.getroot(), encoding="unicode"))
 
 
 def write_config(outData, time, filename=None):
@@ -53,7 +57,7 @@ def write_config(outData, time, filename=None):
 
 
 def write_domains(doc, time, output_dir="."):
-    outData = ET.tostring(doc.getroot(), encoding="UTF-8")
+    outData = doc_to_bytestring(doc)
     for d in doc.findall("//domain"):
         write_config(outData, time, output_dir + "/" + d.text)
 
@@ -127,7 +131,8 @@ def main():
                 parser.print_usage()
                 exit(2)
         elif args.d:
-            write_config(doc, time, args.d + "/" + os.path.basename(f))
+            outData = doc_to_bytestring(doc)
+            write_config(outData, time, args.d + "/" + os.path.basename(f))
         else:
             print_config(doc)
 
