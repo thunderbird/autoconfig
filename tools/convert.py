@@ -39,20 +39,21 @@ def read_config(file, convertTime):
 
 
 def print_config(doc):
-    print doc.toxml(encoding="UTF-8")
+    print(doc.toxml(encoding="UTF-8"))
 
 
 def write_config(outData, time, filename=None):
     if os.path.exists(filename) and os.stat(filename).st_mtime >= time:
         return
-    print "Writing %s" % filename
-    file = codecs.open(filename, "w")
+    print("Writing %s" % filename)
+    file = codecs.open(filename, "wb")
     file.write(outData)
+    file.write(b'\n')
     file.close()
 
 
 def write_domains(doc, time, output_dir="."):
-    outData = ET.tostring(doc.getroot(), encoding="UTF-8") + "\n"
+    outData = ET.tostring(doc.getroot(), encoding="UTF-8")
     for d in doc.findall("//domain"):
         write_config(outData, time, output_dir + "/" + d.text)
 
@@ -120,9 +121,9 @@ def main():
             if args.d:
                 write_domains(doc, time, args.d)
             else:
-                print "When you want to write domain files you",
-                print "should also specify an output directory",
-                print "using -d dir"
+                print("When you want to write domain files you")
+                print("should also specify an output directory")
+                print("using -d dir")
                 parser.print_usage()
                 exit(2)
         elif args.d:
