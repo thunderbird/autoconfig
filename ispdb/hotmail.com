@@ -2,6 +2,7 @@
 <clientConfig version="1.1">
   <emailProvider id="hotmail.com">
     <domain>hotmail.com</domain>
+    <domain>outlook.com</domain>
     <domain>live.com</domain>
     <domain>msn.com</domain>
     <domain>windowslive.com</domain>
