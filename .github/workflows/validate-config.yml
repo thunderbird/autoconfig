@@ -1,0 +1,15 @@
+name: Validate client config
+
+on: [pull_request]
+
+jobs:
+  validate_config:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Validate file extensions
+      run: | 
+       set -o pipefail
+       ls -1 ispdb/ | grep -v '\.xml$' | awk '{print "::error file=ispdb/"$0"::File name \"ispdb/"$0"\" does not end in .xml – Please rename!"}' && exit 1 || true
