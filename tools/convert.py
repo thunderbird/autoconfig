@@ -62,41 +62,9 @@ def write_domains(doc, time, output_dir="."):
         write_config(outData, time, output_dir + "/" + d.text)
 
 
-def convert_11_to_10(doc):
-    # Mark that we're writing a 1.0 client config.
-    doc.getroot().attrib["version"] = "1.0"
-
-    # Change <authentication>password-cleartext</> to plain and
-    # <authentication>password-encrypted</> to secure (from bug 525238).
-    for a in doc.findall("//authentication"):
-        if "password-cleartext" in a.text:
-            a.text = "plain"
-        if "password-encrypted" in a.text:
-            a.text = "secure"
-
-    # Remove all but the first of the incoming and outgoing servers.
-    def removeRest(parent, tagname):
-        first = True
-        for a in parent.findall(tagname):
-            if first:
-                first = False
-            else:
-                parent.remove(a)
-    parent = doc.find("//emailProvider")
-    removeRest(parent, "incomingServer")
-    removeRest(parent, "outgoingServer")
-    outgoingServer = parent.find("outgoingServer")
-    for a in outgoingServer.findall("restriction"):
-        outgoingServer.remove(a)
-    for a in parent.findall("documentation"):
-        parent.remove(a)
-
-
 def main():
     # parse command line options
     parser = argparse.ArgumentParser()
-    parser.add_argument("-v", choices=["1.0"],
-                        help="convert input files to version 1.0")
     parser.add_argument("-d", metavar="dir",
                         help="output directory")
     parser.add_argument("-a", action="store_true",
@@ -117,9 +85,6 @@ def main():
             continue
 
         doc, time = read_config(f, convertTime)
-
-        if args.v == "1.0":
-            convert_11_to_10(doc)
 
         if args.a:
             if args.d:
