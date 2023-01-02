@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <clientConfig version="1.1">
   <emailProvider id="freedom.nl">
     <domain>freedom.nl</domain>
