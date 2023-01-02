@@ -1,0 +1,25 @@
+<clientConfig version="1.1">
+  <emailProvider id="freedom.nl">
+    <domain>freedom.nl</domain>
+    <displayName>Freedom Internet Mail</displayName>
+    <displayShortName>Freedom Internet</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.freedom.nl</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.freedom.nl</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+  <documentation url="https://helpdesk.freedom.nl/category-detail/hoe-stel-ik-mijn-e-mail-in-op-pc-en-laptop">
+    <descr lang="en">E-mail Settings</descr>
+    <descr lang="nl">Instellingen voor e-mail</descr>
+  </documentation>
+</clientConfig>
