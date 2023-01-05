@@ -38,60 +38,33 @@ def read_config(file, convertTime):
     return (ET.parse(file), max(os.stat(file).st_mtime, convertTime))
 
 
+def doc_to_bytestring(doc):
+    return ET.tostring(doc.getroot(), encoding="UTF-8")
+
+
 def print_config(doc):
-    print doc.toxml(encoding="UTF-8")
+    print(ET.tostring(doc.getroot(), encoding="unicode"))
 
 
 def write_config(outData, time, filename=None):
     if os.path.exists(filename) and os.stat(filename).st_mtime >= time:
         return
-    print "Writing %s" % filename
-    file = codecs.open(filename, "w")
+    print("Writing %s" % filename)
+    file = codecs.open(filename, "wb")
     file.write(outData)
+    file.write(b'\n')
     file.close()
 
 
 def write_domains(doc, time, output_dir="."):
-    outData = ET.tostring(doc.getroot(), encoding="UTF-8") + "\n"
+    outData = doc_to_bytestring(doc)
     for d in doc.findall("//domain"):
         write_config(outData, time, output_dir + "/" + d.text)
-
-
-def convert_11_to_10(doc):
-    # Mark that we're writing a 1.0 client config.
-    doc.getroot().attrib["version"] = "1.0"
-
-    # Change <authentication>password-cleartext</> to plain and
-    # <authentication>password-encrypted</> to secure (from bug 525238).
-    for a in doc.findall("//authentication"):
-        if "password-cleartext" in a.text:
-            a.text = "plain"
-        if "password-encrypted" in a.text:
-            a.text = "secure"
-
-    # Remove all but the first of the incoming and outgoing servers.
-    def removeRest(parent, tagname):
-        first = True
-        for a in parent.findall(tagname):
-            if first:
-                first = False
-            else:
-                parent.remove(a)
-    parent = doc.find("//emailProvider")
-    removeRest(parent, "incomingServer")
-    removeRest(parent, "outgoingServer")
-    outgoingServer = parent.find("outgoingServer")
-    for a in outgoingServer.findall("restriction"):
-        outgoingServer.remove(a)
-    for a in parent.findall("documentation"):
-        parent.remove(a)
 
 
 def main():
     # parse command line options
     parser = argparse.ArgumentParser()
-    parser.add_argument("-v", choices=["1.0"],
-                        help="convert input files to version 1.0")
     parser.add_argument("-d", metavar="dir",
                         help="output directory")
     parser.add_argument("-a", action="store_true",
@@ -113,20 +86,18 @@ def main():
 
         doc, time = read_config(f, convertTime)
 
-        if args.v == "1.0":
-            convert_11_to_10(doc)
-
         if args.a:
             if args.d:
                 write_domains(doc, time, args.d)
             else:
-                print "When you want to write domain files you",
-                print "should also specify an output directory",
-                print "using -d dir"
+                print("When you want to write domain files you")
+                print("should also specify an output directory")
+                print("using -d dir")
                 parser.print_usage()
                 exit(2)
         elif args.d:
-            write_config(doc, time, args.d + "/" + os.path.basename(f))
+            outData = doc_to_bytestring(doc)
+            write_config(outData, time, args.d + "/" + os.path.basename(f))
         else:
             print_config(doc)
 
