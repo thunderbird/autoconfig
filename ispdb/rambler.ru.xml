@@ -5,31 +5,31 @@
     <displayName>Rambler Mail</displayName>
     <displayShortName>Rambler</displayShortName>
     <incomingServer type="imap">
-      <hostname>mail.rambler.ru</hostname>
+      <hostname>imap.rambler.ru</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>mail.rambler.ru</hostname>
+      <hostname>pop.rambler.ru</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>mail.rambler.ru</hostname>
+      <hostname>smtp.rambler.ru</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
-  <documentation url="http://help.rambler.ru/article.html?s=141&amp;id=41">
-    <descr lang="en">POP, Thunderbird, with screenshots</descr>
+  <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1277/">
+    <descr lang="ru">Как настроить Mozilla Thunderbird?</descr>
   </documentation>
-  <documentation url="http://help.rambler.ru/article.html?s=141&amp;id=33">
-    <descr lang="en">IMAP, all clients</descr>
+  <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1275/">
+    <descr lang="ru">Общие настройки для почтовых клиентов</descr>
   </documentation>
 </clientConfig>

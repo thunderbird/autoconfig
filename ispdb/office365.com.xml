@@ -6,22 +6,20 @@
     <domain>onmicrosoft.com</domain>
     <!-- MX e.g. example.mail.protection.outlook.com -->
     <domain>mail.protection.outlook.com</domain>
-
-    <displayName>Office365 (Microsoft)</displayName>
-    <displayShortName>Office365</displayShortName>
-
+    <displayName>Microsoft 365</displayName>
+    <displayShortName>Microsoft 365</displayShortName>
     <incomingServer type="imap">
       <hostname>outlook.office365.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
-      <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>outlook.office365.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
-      <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
       <username>%EMAILADDRESS%</username>
       <pop3>
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
@@ -41,7 +39,7 @@
       <hostname>smtp.office365.com</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
-      <authentication>password-cleartext</authentication>
+      <authentication>OAuth2</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
   </emailProvider>
