@@ -45,12 +45,19 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.1und1.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.1und1.de</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
-    <documentation url="http://hilfe-center.1und1.de/access/search/go.php?t=e698123"/>
+    <documentation url="https://hilfe-center.1und1.de/e-mail-c82645/1und1-e-mail-adresse-c84749/e-mail-kontoeinstellungen-fuer-eine-1und1-e-mail-adresse-a783411.html"/>
     <!--
         Kundenservice: +49-721-96-00
         Presse: +49-2602-96-1276 <presse@1und1.de>
