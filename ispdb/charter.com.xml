@@ -1,4 +1,4 @@
-﻿<clientConfig version="1.1">
+<clientConfig version="1.1">
   <emailProvider id="charter.com">
     <domain>charter.net</domain>
     <domain>charter.com</domain>
