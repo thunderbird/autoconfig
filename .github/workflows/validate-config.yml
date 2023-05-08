@@ -9,6 +9,11 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: BOM check
+      uses: arma-actions/bom-check@v1.1
+      with:
+        path: ispdb
+
     - name: Validate file extensions
       run: | 
        set -o pipefail
