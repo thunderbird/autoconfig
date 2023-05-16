@@ -10,23 +10,15 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
-    </incomingServer>
-    <!-- Not working for me. BenB 2010-08-19 from Europe
-    <outgoingServer type="smtp">
-      <hostname>smtp.me.com</hostname>
-      <port>465</port>
-      <socketType>SSL</socketType>
-      <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
-    </outgoingServer>
-    -->
+    </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.mail.me.com</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
-      <username>%EMAILLOCALPART%</username>
-      <authentication>plain</authentication>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://support.apple.com/HT202304"/>
   </emailProvider>
 </clientConfig>
