@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<clientConfig>
+<clientConfig version="1.1">
   <emailProvider id="mx1.tiki.ne.jp">
     <domain>mx1.tiki.ne.jp</domain>
     <domain>mx2.et.tiki.ne.jp</domain>
