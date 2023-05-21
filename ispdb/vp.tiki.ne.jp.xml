@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<clientConfig>
+<clientConfig version="1.1">
   <emailProvider id="vp.tiki.ne.jp">
     <domain>vp.tiki.ne.jp</domain>
     <displayName>TikiTikiインターネット</displayName>
