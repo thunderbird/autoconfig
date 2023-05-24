@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="kpnmail.nl">
+    <domain>kpnmail.nl</domain>
+    <domain>kpnplanet.nl</domain>
+    <domain>planet.nl</domain>
+    <domain>wxs.nl</domain>
+    <domain>hetnet.nl</domain>
+    <domain>freeler.nl</domain>
+    <domain>snelnet.net</domain>
+    <domain>on.nl</domain>
+    <domain>onsbrabantnet.nl</domain>
+    <domain>onsmail.nl</domain>
+    <domain>onsnet.nu</domain>
+    <domain>onsneteindhoven.nl</domain>
+    <domain>onsnetnuenen.nl</domain>
+    <domain>xs4all.nl</domain>
+    <domain>telfort.nl</domain>
+    <domain>tip.nl</domain>
+    <domain>tiscali.nl</domain>
+    <domain>tiscalimail.nl</domain>
+    <displayName>KPN E-mail</displayName>
+    <displayShortName>KPN</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.kpnmail.nl</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.kpnmail.nl</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.kpnmail.nl</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.kpnmail.nl</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.kpnmail.nl</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.kpnmail.nl</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://www.kpn.com/service/internet/e-mail/instellen-laptop-pc.htm"/>
+    <documentation url="https://www.kpn.com/service/internet/e-mail/instellen-laptop-pc/e-mail-op-mozilla-thunderbird.htm"/>
+  </emailProvider>
+</clientConfig>
