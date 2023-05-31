@@ -2,21 +2,29 @@
 <clientConfig version="1.1">
   <emailProvider id="mail.dk">
     <domain>mail.dk</domain>
-    <displayName>TDC (DK)</displayName>
-    <displayShortName>TDC</displayShortName>
+    <displayName>Yousee Mail</displayName>
+    <displayShortName>Yousee</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.mail.dk</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop3.mail.dk</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>asmtp.mail.dk</hostname>
       <port>587</port>
-      <socketType>plain</socketType>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://yousee.dk/hjaelp/artikler/hvad-er-mine-serveroplysninger-til-yousee-mail"/>
   </emailProvider>
 </clientConfig>
