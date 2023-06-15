@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.0">
+  <emailProvider id="educa.madrid.org">
+    <!-- EducaMadrid proporciona servicio de correo a la comunidad educativa de la Comunidad de Madrid -->
+    <!-- MX domain -->
+    <domain>educa.madrid.org</domain>
+    <displayName>EducaMadrid Mail</displayName>
+    <displayShortName>EducaMadrid</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.educa.madrid.org</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.educa.madrid.org</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp01.educa.madrid.org</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <documentation url="https://documentacion.educa.madrid.org/books/correo/page/clientes-de-correo">
+      <descr lang="es">Clientes de correo</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
