@@ -9,6 +9,7 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="imap">
@@ -16,6 +17,7 @@
       <port>143</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -23,6 +25,7 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -30,6 +33,7 @@
       <port>110</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
@@ -37,6 +41,7 @@
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
     <outgoingServer type="smtp">
@@ -44,11 +49,21 @@
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://customer.xfinity.com/help-and-support/internet/setting-up-thunderbird/">
+    <documentation url="https://www.xfinity.com/support/articles/setting-up-thunderbird">
       <descr lang="en">Instructions for setting up Thunderbird for use with comcast.net for home users.</descr>
       <descr lang="es">Instrucciones para instalar Thunderbird para el uso de Comcast para dueños de casa.</descr>
     </documentation>
+    <documentation url="https://www.xfinity.com/support/articles/third-party-email-access">
+      <descr lang="en">Instructions for enabling IMAP/POP/SMTP access for third-party clients</descr>
+    </documentation>
   </emailProvider>
+  <oAuth2>
+    <issuer>comcast.net</issuer>
+    <scope>https://email.comcast.net/ profile openid</scope>
+    <authURL>https://oauth.xfinity.com/oauth/authorize</authURL>
+    <tokenURL>https://oauth.xfinity.com/oauth/token</tokenURL>
+  </oAuth2>
 </clientConfig>
