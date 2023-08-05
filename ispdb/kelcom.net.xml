@@ -3,19 +3,27 @@
     <domain>kelcom.net</domain>
     <displayName>KELCOM Internet</displayName>
     <displayShortName>KELCOM</displayShortName>
+    <incomingServer type="imap">
+      <hostname>pop.kelcom.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop1.kelcom.net</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <hostname>pop.kelcom.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.kelcom.net</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://portal.kelcom.net/support/faq/6/"/>
   </emailProvider>
 </clientConfig>
