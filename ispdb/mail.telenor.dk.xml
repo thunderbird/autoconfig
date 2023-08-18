@@ -112,10 +112,10 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="http://www.telenor.dk/privat/kundeservice/kundeservice/bredbaand/opsaetning/email-og-hjemmeside/tabs/opsaetning/outlook-express-6.0.aspx"/>
+    <documentation url="http://www.telenor.dk/privat/kundeservice/kundeservice/bredbaand/opsaetning/email-og-hjemmeside/tabs/opsaetning/windows-live-mail.aspx"/>
+    <documentation url="http://mailselvbetjening.telenor.dk/">
+      <descr lang="en">Domain list source (requires login)</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="http://www.telenor.dk/privat/kundeservice/kundeservice/bredbaand/opsaetning/email-og-hjemmeside/tabs/opsaetning/outlook-express-6.0.aspx"/>
-  <documentation url="http://www.telenor.dk/privat/kundeservice/kundeservice/bredbaand/opsaetning/email-og-hjemmeside/tabs/opsaetning/windows-live-mail.aspx"/>
-  <documentation url="http://mailselvbetjening.telenor.dk/">
-    <descr lang="en">Domain list source (requires login)</descr>
-  </documentation>
 </clientConfig>
