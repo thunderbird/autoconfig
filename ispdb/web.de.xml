@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="web.de">
     <domain>web.de</domain>
@@ -42,14 +43,25 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>smtp.web.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.web.de</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="https://hilfe.web.de/mailprogramme/imap.html#thunderbird">
-      <descr lang="en">Configure IMAP in Thunderbird</descr>
-      <descr lang="de">IMAP in Thunderbird konfigurieren</descr>
+    <documentation url="https://hilfe.web.de/pop-imap/imap/imap-serverdaten.html">
+      <descr lang="en">Configure IMAP</descr>
+      <descr lang="de">IMAP konfigurieren</descr>
     </documentation>
+    <enable visiturl="https://hilfe.web.de/pop-imap/einschalten.html">
+      <instruction>You must allow access via POP3 &amP; IMAP once in the e-mail settings of your account!</instruction>
+      <instruction lang="de">Sie müssen einmalig den Zugriff über POP3 &amp; IMAP in den E-Mail-Einstellungen Ihres Kontos erlauben!</instruction>
+    </enable>
   </emailProvider>
 </clientConfig>
