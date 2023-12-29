@@ -3,8 +3,8 @@
   <emailProvider id="t-online.de">
     <domain>t-online.de</domain>
     <domain>magenta.de</domain>
-    <displayName>T-Online</displayName>
-    <displayShortName>T-Online</displayShortName>
+    <displayName>t-online</displayName>
+    <displayShortName>t-online</displayShortName>
     <incomingServer type="imap">
       <hostname>secureimap.t-online.de</hostname>
       <port>993</port>
@@ -33,11 +33,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <enable visiturl="https://kundencenter.telekom.de/kundencenter/registriert/dienste-abos/ngcs/email-einstellungen/index.html">
-      <instruction>You need to set up an E-Mail-Password. Attention: The normal password for the T-Online-Website and Webmail does *not* work for email aplications.</instruction>
-      <instruction lang="de">Sie müssen ein E-Mail-Passwort einrichten. Achtung: Das Passwort für die T-Online-Website und Webmail funktioniert *nicht* für E-Mail-Programme!</instruction>
-    </enable>
-    <documentation url="http://hilfe.telekom.de/hsp/cms/content/HSP/de/3378/theme-45858870/theme-45858718/theme-45858716/theme-45858715/faq-45855229">
+    <documentation url="https://meinkonto.telekom-dienste.de/telekom/email/registration/registration.xhtml">
       <descr lang="en">Set up your email address</descr>
       <descr>Richten Sie Ihre Email-Adresse ein</descr>
     </documentation>
@@ -48,9 +44,13 @@
       url="https://email.t-online.de"
       waitForRedirectionURLPrefix="https://accounts.login.idm.telekom.com/">
       <username>%EMAILADDRESS%</username>
-      <usernameField id="user" />
-      <passwordField id="pw_pwd" />
-      <loginButton id="pw_submit" />
+      <usernameField id="username" name="pw_usr" />
+      <passwordField id="pw_pwd" name="pw_pwd" />
+      <loginButton id="pw_submit" name="pw_submit" />
     </loginPageInfo>
   </webMail>
+  <enable visiturl="https://www.telekom.de/hilfe/apps-dienste/e-mail/programme/passwort-verwalten">
+    <instruction>You need to set up an E-Mail-Password. Attention: The normal password for the T-Online-Website and Webmail does *not* work for email applications.</instruction>
+    <instruction lang="de">Sie müssen ein E-Mail-Passwort einrichten. Achtung: Das Passwort für die T-Online-Website und Webmail funktioniert *nicht* für E-Mail-Programme!</instruction>
+  </enable>
 </clientConfig>
