@@ -1,12 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="posteo.de">
     <domain>posteo.de</domain>
     <domain>posteo.at</domain>
+    <domain>posteo.be</domain>
+    <domain>posteo.ca</domain>
     <domain>posteo.ch</domain>
-    <domain>posteo.org</domain>
+    <domain>posteo.cl</domain>
+    <domain>posteo.co</domain>
+    <domain>posteo.co.uk</domain>
+    <domain>posteo.com</domain>
+    <domain>posteo.com.br</domain>
+    <domain>posteo.cr</domain>
+    <domain>posteo.cz</domain>
+    <domain>posteo.dk</domain>
+    <domain>posteo.ee</domain>
+    <domain>posteo.es</domain>
     <domain>posteo.eu</domain>
+    <domain>posteo.fi</domain>
+    <domain>posteo.gl</domain>
+    <domain>posteo.gr</domain>
+    <domain>posteo.hn</domain>
+    <domain>posteo.hr</domain>
+    <domain>posteo.hu</domain>
+    <domain>posteo.ie</domain>
+    <domain>posteo.in</domain>
+    <domain>posteo.is</domain>
+    <domain>posteo.it</domain>
+    <domain>posteo.jp</domain>
+    <domain>posteo.la</domain>
+    <domain>posteo.li</domain>
+    <domain>posteo.lt</domain>
+    <domain>posteo.lu</domain>
+    <domain>posteo.me</domain>
+    <domain>posteo.mx</domain>
+    <domain>posteo.my</domain>
+    <domain>posteo.net</domain>
+    <domain>posteo.nl</domain>
+    <domain>posteo.no</domain>
+    <domain>posteo.nz</domain>
+    <domain>posteo.org</domain>
+    <domain>posteo.pe</domain>
+    <domain>posteo.pl</domain>
+    <domain>posteo.pm</domain>
+    <domain>posteo.pt</domain>
+    <domain>posteo.ro</domain>
+    <domain>posteo.se</domain>
+    <domain>posteo.sg</domain>
+    <domain>posteo.si</domain>
+    <domain>posteo.tn</domain>
+    <domain>posteo.uk</domain>
+    <domain>posteo.us</domain>
     <displayName>Posteo</displayName>
     <displayShortName>Posteo</displayShortName>
+    <incomingServer type="imap">
+      <hostname>posteo.de</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="imap">
       <hostname>posteo.de</hostname>
       <port>143</port>
@@ -14,6 +67,27 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>posteo.de</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>posteo.de</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>posteo.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
     <outgoingServer type="smtp">
       <hostname>posteo.de</hostname>
       <port>587</port>
@@ -21,5 +95,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://posteo.de/hilfe/wie-richte-ich-posteo-in-einem-mailprogramm-ein-pop3-imap-und-smtp" />
   </emailProvider>
 </clientConfig>
