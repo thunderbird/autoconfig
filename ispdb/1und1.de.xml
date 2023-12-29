@@ -57,19 +57,19 @@
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
-    <documentation url="https://hilfe-center.1und1.de/e-mail-c82645/1und1-e-mail-adresse-c84749/e-mail-kontoeinstellungen-fuer-eine-1und1-e-mail-adresse-a783411.html"/>
+    <documentation url="https://hilfe-center.1und1.de/e-mail-einstellungen" />
     <!--
         Kundenservice: +49-721-96-00
         Presse: +49-2602-96-1276 <presse@1und1.de>
       -->
   </emailProvider>
   <webMail>
-    <loginPage url="https://webmailer.1und1.de/" />
-    <loginPageInfo url="https://webmailer.1und1.de/">
+    <loginPage url="https://www.1und1.de/login" />
+    <loginPageInfo url="https://www.1und1.de/login">
       <username>%EMAILADDRESS%</username>
-      <usernameField id="emaillogin.Username" />
-      <passwordField id="emaillogin.Password" />
-      <loginButton id="save" />
+      <usernameField id="webmailer" name="emaillogin.Username" />
+      <passwordField name="emaillogin.Password" />
+      <loginButton />
     </loginPageInfo>
   </webMail>
 </clientConfig>
