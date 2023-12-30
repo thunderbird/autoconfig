@@ -34,13 +34,6 @@
        <descr lang="lt">Pašto programų nustatymai (IMAP, POP3, SMTP)</descr>
        <descr lang="ru">Настройки для почтовых программ (IMAP, POP3,SMTP и др.)</descr>
     </documentation>
-    <enable visiturl="https://help.mail.ee/?keyword=email_clients_access">
-      <instruction>Enable external POP3/IMAP and SMTP access in your account settings</instruction>
-      <instruction lang="lv">Ieslēgt POP3/IMAP pieeju savam kontam</instruction>
-      <instruction lang="ru">Доступ POP3/IMAP, пароль для почтовой программы</instruction>
-      <instruction lang="lt">POP3/IMAP prieiga, pašto programų slaptažodis</instruction>
-      <instruction lang="et">POP3/IMAP juurdepääs, e-posti programmi parool</instruction>
-    </enable>
   </emailProvider>
   <webMail>
     <loginPage url="https://login.%EMAILDOMAIN%" />
@@ -51,4 +44,11 @@
       <loginButton id="implogin__btn_sign-in"/>
     </loginPageInfo>
   </webMail>
+  <enable visiturl="https://help.mail.ee/?keyword=email_clients_access">
+    <instruction>Enable external POP3/IMAP and SMTP access in your account settings</instruction>
+    <instruction lang="lv">Ieslēgt POP3/IMAP pieeju savam kontam</instruction>
+    <instruction lang="ru">Доступ POP3/IMAP, пароль для почтовой программы</instruction>
+    <instruction lang="lt">POP3/IMAP prieiga, pašto programų slaptažodis</instruction>
+    <instruction lang="et">POP3/IMAP juurdepääs, e-posti programmi parool</instruction>
+  </enable>
 </clientConfig>

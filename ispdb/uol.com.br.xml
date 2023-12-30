@@ -25,10 +25,6 @@
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <enable visiturl="http://bmail.uol.com.br/configuration/imap_access_config">
-      <instruction lang="pt-BR">Para usar o protocolo IMAP, você deve antes acessar as suas Configurações do webmail UOL, clicar na opção "Ativar IMAP" e então salvar as modificações.</instruction>
-      <instruction lang="en-US">To use IMAP, you must log in to webmail, go to "Settings", click "Activate IMAP"</instruction>
-    </enable>
     <documentation url="https://sac.uol.com.br/info/primeiros_passos/config_mozillathunderbird.jhtm">
       <descr lang="pt-BR">Configuração do Mozilla Thunderbird passo-a-passo</descr>
     </documentation>
@@ -39,4 +35,8 @@
       <descr lang="pt-BR">O que é IMAP e como ativá-lo na sua conta UOL</descr>
     </documentation>
   </emailProvider>
+  <enable visiturl="http://bmail.uol.com.br/configuration/imap_access_config">
+    <instruction lang="pt-BR">Para usar o protocolo IMAP, você deve antes acessar as suas Configurações do webmail UOL, clicar na opção "Ativar IMAP" e então salvar as modificações.</instruction>
+    <instruction lang="en-US">To use IMAP, you must log in to webmail, go to "Settings", click "Activate IMAP"</instruction>
+  </enable>
 </clientConfig>
