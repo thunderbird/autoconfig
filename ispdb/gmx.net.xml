@@ -9,6 +9,10 @@
     <domain>gmx.biz</domain>
     <domain>gmx.org</domain>
     <domain>gmx.info</domain>
+    <domain>gmx.com</domain>
+    <domain>mein.gmx</domain>
+    <domain>mail.gmx</domain>
+    <domain>email.gmx</domain>
     <!-- see also other domains below -->
     <!-- gmx.com is same company, but different access servers -->
     <displayName>GMX Freemail</displayName>
@@ -59,6 +63,11 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://hilfe.gmx.net/pop-imap/imap/imap-serverdaten.html" />
+    <enable visiturl="https://hilfe.gmx.net/pop-imap/einschalten.html">
+      <instruction>You must allow access via POP3 &amP; IMAP once in the e-mail settings of your account!</instruction>
+      <instruction lang="de">Sie müssen einmalig den Zugriff über POP3 &amp; IMAP in den E-Mail-Einstellungen Ihres Kontos erlauben!</instruction>
+    </enable>
   </emailProvider>
 </clientConfig>
 <!-- A whole lot of vanity domains, which we will not add here (yay MX lookup):
