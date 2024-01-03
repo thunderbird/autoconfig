@@ -28,8 +28,8 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.telstra.com.au/support/category/email/telstra-mail/recommended-email-settings-for-telstra-mail">
+      <descr lang="en">Recommended email settings</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="https://www.telstra.com.au/support/category/email/telstra-mail/recommended-email-settings-for-telstra-mail">
-    <descr lang="en">Recommended email settings</descr>
-  </documentation>
 </clientConfig>

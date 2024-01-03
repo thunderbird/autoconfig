@@ -25,11 +25,11 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1277/">
+      <descr lang="ru">Как настроить Mozilla Thunderbird?</descr>
+    </documentation>
+    <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1275/">
+      <descr lang="ru">Общие настройки для почтовых клиентов</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1277/">
-    <descr lang="ru">Как настроить Mozilla Thunderbird?</descr>
-  </documentation>
-  <documentation url="https://help.rambler.ru/mail/mail-pochtovye-klienty/1275/">
-    <descr lang="ru">Общие настройки для почтовых клиентов</descr>
-  </documentation>
 </clientConfig>

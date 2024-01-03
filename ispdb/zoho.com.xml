@@ -37,26 +37,26 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.zoho.com/mail/help/imap-access.html">
+      <descr lang="en">Zoho Mail - Access via IMAP</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/imap-access.html">
+      <descr lang="en">Zoho Mail - POP configuration details</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/zoho-smtp.html">
+      <descr lang="en">Zoho Mail - SMTP Server Configuration</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/thunderbird-imap-access.html">
+      <descr lang="en">Configure Zoho Mail as IMAP Account in Thunderbird</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/thunderbird-pop-access.html">
+      <descr lang="en">Configure your Zoho Account as POP in Thunderbird</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/pop-access.html#EnablePOPAccess">
+      <descr lang="en">Enable POP Access</descr>
+    </documentation>
+    <documentation url="https://www.zoho.com/mail/help/imap-access.html#EnableIMAP">
+      <descr lang="en">Enable IMAP Access</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="https://www.zoho.com/mail/help/imap-access.html">
-    <descr lang="en">Zoho Mail - Access via IMAP</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/imap-access.html">
-    <descr lang="en">Zoho Mail - POP configuration details</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/zoho-smtp.html">
-    <descr lang="en">Zoho Mail - SMTP Server Configuration</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/thunderbird-imap-access.html">
-    <descr lang="en">Configure Zoho Mail as IMAP Account in Thunderbird</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/thunderbird-pop-access.html">
-    <descr lang="en">Configure your Zoho Account as POP in Thunderbird</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/pop-access.html#EnablePOPAccess">
-    <descr lang="en">Enable POP Access</descr>
-  </documentation>
-  <documentation url="https://www.zoho.com/mail/help/imap-access.html#EnableIMAP">
-    <descr lang="en">Enable IMAP Access</descr>
-  </documentation>
 </clientConfig>

@@ -38,9 +38,9 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.ziggo.nl/klantenservice/e-mail/?src=autoconfig">
+      <descr lang="en">E-mail Settings</descr>
+      <descr lang="nl">Instellingen voor e-mail</descr>
+    </documentation>
   </emailProvider>
-  <documentation url="https://www.ziggo.nl/klantenservice/e-mail/?src=autoconfig">
-    <descr lang="en">E-mail Settings</descr>
-    <descr lang="nl">Instellingen voor e-mail</descr>
-  </documentation>
 </clientConfig>
