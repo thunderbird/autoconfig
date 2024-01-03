@@ -8,6 +8,6 @@ Be sure to read the docs below before changing anything:
 * [How to configure your domain](https://www.bucksch.org/1/projects/thunderbird/autoconfiguration/#Configuration_server_at_ISP) without being added to the ISPDB here. This is useful for small ISPs and domains that are not open to the public.
 * [Original project page - for reference](https://wiki.mozilla.org/Thunderbird:Autoconfiguration)
 
-This ISPDB was created and is maintained by Ben Bucksch.
+This ISPDB was created and is maintained and owned by Ben Bucksch.
 
 There are two main branches: `master` and `prod`. The [production server](https://autoconfig.thunderbird.net/autoconfig/v1.1/) will update when the `prod` branch is pushed. Any changes to that branch will automatically go live without further verification and affect the new account settings of all TB3 users, so be careful. The [stage server](https://autoconfig-stage.thunderbird.net/autoconfig/v1.1/) will update when the `master` branch is pushed.
