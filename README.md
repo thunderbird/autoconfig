@@ -3,8 +3,8 @@ ISPDB - Generic database of mail server configuration
 It contains the server names and configuation for almost all large ISPs in the world. Most ISPs with a user base of more than 0.1% are included here.
 
 Be sure to read the docs below before changing anything:
-* [Autoconfig mechanism documentation](https://www.bucksch.org/1/projects/thunderbird/autoconfiguration/), including file format definition and explanations.
-* [File format](https://www.bucksch.org/1/projects/thunderbird/autoconfiguration/config-file-format.html)
+* [Autoconfig specification](https://benbucksch.github.io/autoconfig-spec/draft-autoconfig-1.html) for the file format, location, and mechanism.
+* [Autoconfig documentation](https://www.bucksch.org/1/projects/thunderbird/autoconfiguration/) with some explanations.
 * [How to configure your domain](https://www.bucksch.org/1/projects/thunderbird/autoconfiguration/#Configuration_server_at_ISP) without being added to the ISPDB here. This is useful for small ISPs and domains that are not open to the public.
 * [Original project page - for reference](https://wiki.mozilla.org/Thunderbird:Autoconfiguration)
 
