@@ -1,0 +1,28 @@
+<clientConfig version="1.1">
+  <emailProvider id="purelymail.com">
+    <domain>purelymail.com</domain>
+    <displayName>purelymail.com</displayName>
+    <displayShortName>purelymail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mailserver.purelymail.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mailserver.purelymail.com</hostname>
+      <port>995</port>
+      <socketType>SSL/socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mailserver.purelymail.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
