@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="avocat.fr">
+    <domain>avocat.fr</domain>
+    <displayName>Avocat.fr</displayName>
+    <displayShortName>Avocat.fr</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>imaps.avocat.fr</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+
+    <outgoingServer type="smtp">
+      <hostname>smtps.avocat.fr</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+  </emailProvider>
+</clientConfig>
+
