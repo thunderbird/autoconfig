@@ -3,7 +3,7 @@
     <emailProvider id="educa.madrid.org">
         <domain>educa.madrid.org</domain>
 
-        <displayname>Plataforma EducaMadrid</displayname>
+        <displayName>Plataforma EducaMadrid</displayName>
         <displayShortName>EducaMadrid</displayShortName>
 
         <incomingServer type="imap">
