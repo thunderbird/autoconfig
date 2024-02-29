@@ -60,7 +60,7 @@
       <descr lang="de">IMAP konfigurieren</descr>
     </documentation>
     <enable visiturl="https://hilfe.web.de/pop-imap/einschalten.html">
-      <instruction>You must allow access via POP3 &amP; IMAP once in the e-mail settings of your account!</instruction>
+      <instruction>You must allow access via POP3 &amp; IMAP once in the e-mail settings of your account!</instruction>
       <instruction lang="de">Sie müssen einmalig den Zugriff über POP3 &amp; IMAP in den E-Mail-Einstellungen Ihres Kontos erlauben!</instruction>
     </enable>
   </emailProvider>
