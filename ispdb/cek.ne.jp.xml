@@ -4,18 +4,27 @@
     <domain>cek.ne.jp</domain>
     <displayName>エコーシティー・駒ケ岳</displayName>
     <displayShortName>CEK-Net</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.cek.ne.jp</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>mail.cek.ne.jp</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.cek.ne.jp</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
-      <authentication>none</authentication>
+      <hostname>smtpa.cek.ne.jp</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://faq.cek.co.jp/CEK%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E4%BD%BF%E3%81%86%E6%96%B9%E6%B3%95-64b667d02407c8001bfabc95"/>
   </emailProvider>
 </clientConfig>
