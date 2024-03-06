@@ -4,18 +4,28 @@
     <domain>cc9.ne.jp</domain>
     <displayName>CC9インターネットサービス</displayName>
     <displayShortName>CC9</displayShortName>
+    <incomingServer type="imap">
+      <hostname>pop.cc9.ne.jp</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop.cc9.ne.jp</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.cc9.ne.jp</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
-      <authentication>none</authentication>
+      <hostname>msa.cc9.ne.jp</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation url="https://www.cc9.jp/support/internet/software/mail/thunderbird.html"/>
+    <documentation url="https://www.cc9.jp/support/internet/software/mail/imap.html"/>
   </emailProvider>
 </clientConfig>
