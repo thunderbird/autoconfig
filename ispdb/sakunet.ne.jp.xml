@@ -4,18 +4,26 @@
     <domain>sakunet.ne.jp</domain>
     <displayName>佐久ケーブルテレビ</displayName>
     <displayShortName>Saku-Net</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.sakunet.ne.jp</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>mail.sakunet.ne.jp</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILLOCALPART%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.sakunet.ne.jp</hostname>
-      <port>25</port>
-      <socketType>plain</socketType>
-      <authentication>none</authentication>
+      <hostname>smtpa.sakunet.ne.jp</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILLOCALPART%</username>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
 </clientConfig>
