@@ -9,15 +9,15 @@
     <displayShortName>EarthLink</displayShortName>
     <incomingServer type="imap">
       <hostname>imap.earthlink.net</hostname>
-      <port>143</port>
-      <socketType>plain</socketType>
+      <port>993</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </incomingServer>
     <incomingServer type="pop3">
       <hostname>pop.earthlink.net</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </incomingServer>
@@ -26,10 +26,8 @@
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://support.earthlink.net/email/email-server-settings.php">
-      <descr>POP settings, domains</descr>
-    </documentation>
+    <documentation url="https://help.earthlink.net/portal/en/kb/articles/email-server-settings" />
   </emailProvider>
 </clientConfig>
