@@ -11,6 +11,7 @@ These email clients or libraries support (part of) the Autoconfig protocol:
 |[Evolution](https://wiki.gnome.org/Apps/Evolution)|[Link](https://gitlab.gnome.org/GNOME/evolution/-/blob/master/src/mail/e-mail-autoconfig.c)|:white_check_mark:|
 |[FairEmail](https://email.faircode.eu/)|[Link](https://github.com/M66B/FairEmail/blob/master/app/src/main/java/eu/faircode/email/EmailProvider.java)|:white_check_mark:|
 |[Geary](https://wiki.gnome.org/Apps/Geary)|[Link](https://gitlab.gnome.org/GNOME/geary/-/blob/main/src/client/accounts/accounts-autoconfig.vala)|:white_check_mark:|
+|[Himalaya](https://pimalaya.org/himalaya/cli/latest/)|[Link](https://git.sr.ht/~soywod/pimalaya/tree/master/item/email/src/account/discover/mod.rs)|:white_check_mark:|
 |[K-9 Mail](https://k9mail.app/)|[Link](https://github.com/thunderbird/thunderbird-android/tree/main/feature/autodiscovery/autoconfig/src/main/kotlin/app/k9mail/autodiscovery/autoconfig)|:white_check_mark:|
 |[Kontact](https://kontact.kde.org/)|[Link](https://invent.kde.org/pim/kmail-account-wizard/-/blob/master/src/ispdbservice.cpp)|:white_check_mark:|
 |[Nextcloud Mail](https://apps.nextcloud.com/apps/mail)|[Link](https://github.com/nextcloud/mail/tree/main/lib/Service/AutoConfig)|:white_check_mark:|
