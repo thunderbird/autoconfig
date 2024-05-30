@@ -5,29 +5,26 @@
     <displayName>email.it</displayName>
     <displayShortName>email.it</displayShortName>
     <incomingServer type="imap">
-      <hostname>imapmail.email.it</hostname>
+      <hostname>in.email.it</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>popmail.email.it</hostname>
+      <hostname>pop.email.it</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.email.it</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
+      <hostname>out.email.it</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://www.email.it/ita/config/thunder.php"/>
-    <!--
-        You should set "IMAP server directory" to "INBOX"
-      -->
+    <documentation url="https://www.email.it/faq" />
   </emailProvider>
 </clientConfig>
