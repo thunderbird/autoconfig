@@ -5,8 +5,8 @@
     <domain>googlemail.com</domain>
     <!-- MX, for Google Apps -->
     <domain>google.com</domain>
-    <!-- HACK. Only add ISPs with 100000+ users here -->
     <domain>jazztel.es</domain>
+    <domain>nyu.edu</domain>
 
     <displayName>Google Mail</displayName>
     <displayShortName>GMail</displayShortName>
