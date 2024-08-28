@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="vivaldi.net">
+    <domain>vivaldi.net</domain>
+
+    <displayName>Vivaldi.net Mail</displayName>
+    <displayShortName>Vivaldi Mail</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>imap.vivaldi.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.vivaldi.net</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.vivaldi.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.vivaldi.net</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.vivaldi.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.vivaldi.net</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+
+    <documentation url="https://help.vivaldi.com/services/webmail/setting-up-vivaldi-mail-in-a-mail-client/#Server_settings">
+      <descr lang="en">Set up Vivaldi webmail account in a mail client</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/sr/services-sr/webmail-sr/setting-up-vivaldi-mail-in-a-mail-client/#Podesavana_servera">
+      <descr lang="sr">Подешавање налога Vivaldi веб поште у клијенту поште</descr>
+    </documentation>
+  </emailProvider>
+
+</clientConfig>

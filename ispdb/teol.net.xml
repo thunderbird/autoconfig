@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="teol.net">
+    <domain>teol.net</domain>
+
+    <displayName>TEOL.net Mail</displayName>
+    <displayShortName>TEOL</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>imap.teol.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.teol.net</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.teol.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+
+    <documentation url="https://hostingpodrska.teol.net/osticket/kb/faq.php?id=29">
+      <descr lang="sr">Koje parametre da koristim prilikom podesavanja Mail klijenta?</descr>
+    </documentation>
+  </emailProvider>
+
+</clientConfig>
