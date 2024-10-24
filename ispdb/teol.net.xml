@@ -2,6 +2,7 @@
 <clientConfig version="1.1">
   <emailProvider id="teol.net">
     <domain>teol.net</domain>
+    <domain>mtel.tel</domain>
 
     <displayName>TEOL.net Mail</displayName>
     <displayShortName>TEOL</displayShortName>
@@ -32,4 +33,16 @@
     </documentation>
   </emailProvider>
 
+  <calendar type="caldav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>http-basic</authentication>
+    <serverURL>https://webmail.teol.net/SOGo/dav/</serverURL>
+  </calendar>
+
+  <addressBook type="carddav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>http-basic</authentication>
+    <serverURL>https://webmail.teol.net/SOGo/dav/</serverURL>
+  </addressBook>
+  
 </clientConfig>
