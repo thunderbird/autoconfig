@@ -27,14 +27,4 @@
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
   </emailProvider>
-  <calendar type="caldav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://dav.webmail.bell.net</serverURL>
-  </calendar>
-  <addressBook type="carddav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://dav.webmail.bell.net</serverURL>
-  </addressBook>
 </clientConfig>

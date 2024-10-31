@@ -64,14 +64,4 @@
       <instruction lang="de">Sie müssen einmalig den Zugriff über POP3 &amp; IMAP in den E-Mail-Einstellungen Ihres Kontos erlauben!</instruction>
     </enable>
   </emailProvider>
-  <calendar type="caldav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://caldav.web.de/</serverURL>
-  </calendar>
-  <addressBook type="carddav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://carddav.web.de/</serverURL>
-  </addressBook>
 </clientConfig>

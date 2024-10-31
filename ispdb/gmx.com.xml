@@ -69,14 +69,4 @@
       <authentication>password-cleartext</authentication>
     </outgoingServer>
   </emailProvider>
-  <calendar type="caldav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://caldav.gmx.com/</serverURL>
-  </calendar>
-  <addressBook type="carddav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>http-basic</authentication>
-    <serverURL>https://carddav.gmx.com/</serverURL>
-  </addressBook>
 </clientConfig>

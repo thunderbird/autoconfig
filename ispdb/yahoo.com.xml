@@ -66,21 +66,9 @@
     </documentation>
   </emailProvider>
 
-  <calendar type="caldav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>OAuth2</authentication>
-    <serverURL>https://caldav.calendar.yahoo.com</serverURL>
-  </calendar>
-
-  <calendar type="carddav">
-    <username>%EMAILADDRESS%</username>
-    <authentication>OAuth2</authentication>
-    <serverURL>https://carddav.address.yahoo.com/</serverURL>
-  </calendar>
-
   <oAuth2>
     <issuer>login.yahoo.com</issuer>
-    <scope>mail-w sdct-w ycal-r ycal-w</scope>
+    <scope>mail-w</scope>
     <authURL>https://api.login.yahoo.com/oauth2/request_auth</authURL>
     <tokenURL>https://api.login.yahoo.com/oauth2/get_token</tokenURL>
   </oAuth2>
