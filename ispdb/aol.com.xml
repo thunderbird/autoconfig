@@ -57,9 +57,21 @@
     </documentation>
   </emailProvider>
 
+  <calendar type="caldav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>OAuth2</authentication>
+    <serverURL>https://caldav.aol.com</serverURL>
+  </calendar>
+
+  <calendar type="carddav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>OAuth2</authentication>
+    <serverURL>https://carddav.aol.com</serverURL>
+  </calendar>
+
   <oAuth2>
     <issuer>login.aol.com</issuer>
-    <scope>mail-w</scope>
+    <scope>mail-w sdct-w ycal-r ycal-w</scope>
     <authURL>https://api.login.aol.com/oauth2/request_auth</authURL>
     <tokenURL>https://api.login.aol.com/oauth2/get_token</tokenURL>
   </oAuth2>
