@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<clientConfig version="1.1">
+  <emailProvider id="mit.edu">
+    <domain>mit.edu</domain>
+    <displayName>MIT IMAP Mail</displayName>
+    <displayShortName>MIT</displayShortName>
+    <incomingServer type="imap">
+      <hostname>outlook.office365.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>outgoing.mit.edu</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILLOCALPART%</username>
+    </outgoingServer>
+    <documentation url="http://kb.mit.edu">
+      <descr lang="en">MIT Knowledgebase</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
