@@ -113,7 +113,6 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <authentication>OAuth2</authentication>
-      <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <incomingServer type="pop3">
@@ -121,7 +120,6 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <authentication>OAuth2</authentication>
-      <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
       <pop3>
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
@@ -133,7 +131,6 @@
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <authentication>OAuth2</authentication>
-      <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
     <documentation url="https://support.office.com/article/pop-imap-and-smtp-settings-for-outlook-com-d088b986-291d-42b8-9564-9c414e2aa040">
