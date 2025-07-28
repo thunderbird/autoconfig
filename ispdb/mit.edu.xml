@@ -3,7 +3,7 @@
 <clientConfig version="1.1">
   <emailProvider id="mit.edu">
     <domain>mit.edu</domain>
-    <displayName>MIT IMAP Mail</displayName>
+    <displayName>MIT Mail</displayName>
     <displayShortName>MIT</displayShortName>
     <incomingServer type="imap">
       <hostname>outlook.office365.com</hostname>
@@ -14,13 +14,13 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>outgoing.mit.edu</hostname>
-      <port>587</port>
-      <socketType>STARTTLS</socketType>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILLOCALPART%</username>
     </outgoingServer>
-    <documentation url="http://kb.mit.edu">
-      <descr lang="en">MIT Knowledgebase</descr>
+    <documentation url="https://kb.mit.edu/confluence/display/istcontrib/Microsoft+365+Email+and+Calendaring+-+Configure+via+IMAP+Settings">
+      <descr lang="en">Microsoft 365 Email and Calendaring - Configure via IMAP Settings</descr>
     </documentation>
   </emailProvider>
 </clientConfig>
