@@ -13,6 +13,13 @@
     <domain>wans.net</domain>
     <displayName>AT&amp;T</displayName>
     <displayShortName>AT&amp;T</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.mail.att.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
       <hostname>inbound.att.net</hostname>
       <port>995</port>
@@ -27,8 +34,8 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="http://www.att.com/esupport/article.jsp?sid=KB401570&amp;ct=9000152">
-      <descr lang="en">Configure POP3 for att, sbcglobal, swbell, prodigy etc.</descr>
+    <documentation url="https://www.att.com/support/article/email-support/KM1010523/">
+      <descr lang="en">Configure IMAP and POP3 for att, sbcglobal, swbell etc.</descr>
     </documentation>
   </emailProvider>
 </clientConfig>
