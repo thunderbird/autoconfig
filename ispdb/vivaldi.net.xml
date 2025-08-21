@@ -48,12 +48,51 @@
       <authentication>password-cleartext</authentication>
     </outgoingServer>
 
+    <documentation url="https://help.vivaldi.com/bg/services-bg/webmail-bg/setting-up-vivaldi-mail-in-a-mail-client/#Nastrojki_na_srvrite">
+      <descr lang="bg">Задаване на профила за уебпоща на Vivaldi в пощенски клиент</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/de/services-de/webmail-de/vivaldi-webmail-konto-in-einem-e-mail-client-einrichten/#Server-Einstellungen">
+      <descr lang="de">Vivaldi-Webmail-Konto in einem E-Mail-Client einrichten</descr>
+    </documentation>
     <documentation url="https://help.vivaldi.com/services/webmail/setting-up-vivaldi-mail-in-a-mail-client/#Server_settings">
       <descr lang="en">Set up Vivaldi webmail account in a mail client</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/es/cuenta-y-servicios/webmail-vivaldi/configurar-la-cuenta-de-correo-web-de-vivaldi-en-un-cliente-de-correo/#Configuracion_del_servidor">
+      <descr lang="es">Configurar la cuenta de correo web de Vivaldi en un cliente de correo</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/fr/services-fr/webmail-fr/configurer-un-compte-e-mail-vivaldi-dans-un-client-de-messagerie/#Parametres_du_serveur">
+      <descr lang="fr">Configurer un compte e-mail Vivaldi dans un client de messagerie</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/ja/services-ja/webmail-ja/setting-up-vivaldi-mail-in-a-mail-client/#saba_she_ding">
+      <descr lang="ja">ウェブメールアカウントを設定</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/pt-pt/services-pt-pt-pt-pt/webmail-pt-pt/configurar-a-conta-webmail-do-vivaldi-num-cliente-de-correio-eletronico/#Definicoes_do_servidor">
+      <descr lang="pt">Configurar a conta webmail do Vivaldi num cliente de correio eletrónico</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/ru/services-ru/webmail-ru/setting-up-vivaldi-mail-in-a-mail-client/#Nastrojki_servera">
+      <descr lang="ru">Настройка учётной записи Vivaldi в почтовой программе</descr>
     </documentation>
     <documentation url="https://help.vivaldi.com/sr/services-sr/webmail-sr/setting-up-vivaldi-mail-in-a-mail-client/#Podesavana_servera">
       <descr lang="sr">Подешавање налога Vivaldi веб поште у клијенту поште</descr>
     </documentation>
+    <documentation url="https://help.vivaldi.com/uk/services-uk/webmail/setting-up-vivaldi-mail-in-a-mail-client/#Nalastuvanna_servera">
+      <descr lang="uk">Налаштування облікового запису веб-пошти Vivaldi у поштовому клієнті</descr>
+    </documentation>
+    <documentation url="https://help.vivaldi.com/zh-hans/services-zh-hans/webmail-zh-hans/setting-up-vivaldi-mail-in-a-mail-client/#fu_wu_qi_she_zhi">
+      <descr lang="zh">在邮件客户端中设置 Vivaldi 网络邮件账户</descr>
+    </documentation>
   </emailProvider>
+
+  <calendar type="caldav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>http-basic</authentication>
+    <serverURL>https://calendar.vivaldi.net/calendars/</serverURL>
+  </calendar>
+
+  <addressBook type="carddav">
+    <username>%EMAILADDRESS%</username>
+    <authentication>http-basic</authentication>
+    <serverURL>https://calendar.vivaldi.net/addressbooks</serverURL>
+  </addressBook>
 
 </clientConfig>
