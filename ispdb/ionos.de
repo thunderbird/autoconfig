@@ -1,0 +1,65 @@
+<clientConfig version="1.1">
+  <emailProvider id="ionos.de">
+    <!-- MX servers -->
+    <domain>ionos.de</domain>
+    <domain>kundenserver.de</domain>
+    <domain>schlund.de</domain>
+    <displayName>IONOS</displayName>
+    <displayShortName>IONOS</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.ionos.de</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.ionos.de</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.ionos.de</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop.ionos.de</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.ionos.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.ionos.de</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <documentation url="https://www.ionos.de/hilfe/index.php?id=2490"/>
+    <!--
+        Kundenservice: +49-721-170-555
+      -->
+  </emailProvider>
+  <webMail>
+    <loginPage url="https://mail.ionos.de/"/>
+    <loginPageInfo url="https://mail.ionos.de/">
+      <username>%EMAILADDRESS%</username>
+      <usernameField id="username"/>
+      <passwordField id="password"/>
+      <loginButton id="submit-login-form"/>
+    </loginPageInfo>
+  </webMail>
+</clientConfig>
