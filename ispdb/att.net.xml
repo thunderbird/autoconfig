@@ -18,6 +18,7 @@
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
@@ -25,6 +26,7 @@
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
@@ -32,6 +34,7 @@
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
     <documentation url="https://www.att.com/support/article/email-support/KM1010523/">
