@@ -3,8 +3,10 @@
   <emailProvider id="zoho.com">
     <domain>zoho.com</domain>
 	<domain>zoho.in</domain>
+	<domain>zoho.eu</domain>
     <domain>zohomail.com</domain>
 	<domain>zohomail.in</domain>
+	<domain>zohomail.eu</domain>
     <displayName>Zoho Mail</displayName>
     <displayShortName>Zoho</displayShortName>
     <incomingServer type="imap">
