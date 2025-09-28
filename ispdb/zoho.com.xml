@@ -2,11 +2,15 @@
 <clientConfig version="1.1">
   <emailProvider id="zoho.com">
     <domain>zoho.com</domain>
-	<domain>zoho.in</domain>
+	<domain>zoho.com.au</domain>
 	<domain>zoho.eu</domain>
+	<domain>zoho.in</domain>
+	<domain>zoho.jp</domain>
     <domain>zohomail.com</domain>
-	<domain>zohomail.in</domain>
+	<domain>zohomail.com.au</domain>
 	<domain>zohomail.eu</domain>
+	<domain>zohomail.in</domain>
+	<domain>zohomail.jp</domain>
     <displayName>Zoho Mail</displayName>
     <displayShortName>Zoho</displayShortName>
     <incomingServer type="imap">
