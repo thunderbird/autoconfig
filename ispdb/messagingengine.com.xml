@@ -2,12 +2,13 @@
 <clientConfig version="1.1">
   <emailProvider id="MessagingEngine">
     <domain>messagingengine.com</domain>
-    <displayName>FastMail</displayName>
-    <displayShortName>FastMail</displayShortName>
+    <displayName>Fastmail</displayName>
+    <displayShortName>Fastmail</displayShortName>
     <incomingServer type="imap">
       <hostname>imap.fastmail.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
@@ -15,6 +16,7 @@
       <hostname>pop.fastmail.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </incomingServer>
@@ -22,6 +24,7 @@
       <hostname>smtp.fastmail.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
+      <authentication>OAuth2</authentication>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
@@ -29,7 +32,10 @@
       <descr lang="en">Server Names and Ports</descr>
     </instruction>
     <instruction url="https://www.fastmail.com/help/clients/thunderbird.html">
-      <descr lang="en">Using FastMail with Mozilla Thunderbird</descr>
+      <descr lang="en">Using Fastmail with Mozilla Thunderbird</descr>
     </instruction>
   </emailProvider>
+  <webMail>
+    <loginPage url="https://app.fastmail.com/login/?domain=%EMAILDOMAIN%" />
+  </webMail>
 </clientConfig>
