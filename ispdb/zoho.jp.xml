@@ -5,6 +5,8 @@
     <domain>zohomail.jp</domain>
     <displayName>Zoho Mail - Japan</displayName>
     <displayShortName>Zoho - Japan</displayShortName>
+    <!-- You must enable IMAP Access for your account  
+	     before you begin the configuration in the email client.  -->
     <incomingServer type="imap">
       <hostname>imap.zoho.jp</hostname>
       <port>993</port>
@@ -21,8 +23,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable POP Access for your account  
-	     before you begin the configuration in the email client.  -->
     <outgoingServer type="smtp">
       <hostname>smtp.zoho.jp</hostname>
       <port>465</port>

@@ -5,6 +5,8 @@
     <domain>zohomail.eu</domain>
     <displayName>Zoho Mail - Europe</displayName>
     <displayShortName>Zoho - Europe</displayShortName>
+    <!-- You must enable IMAP Access for your account  
+	     before you begin the configuration in the email client.  -->
     <incomingServer type="imap">
       <hostname>imap.zoho.eu</hostname>
       <port>993</port>
@@ -12,7 +14,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable IMAP Access for your account  
+    <!-- You must enable POP Access for your account  
 	     before you begin the configuration in the email client.  -->
     <incomingServer type="pop3">
       <hostname>pop.zoho.eu</hostname>
@@ -21,8 +23,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable POP Access for your account  
-	     before you begin the configuration in the email client.  -->
     <outgoingServer type="smtp">
       <hostname>smtp.zoho.eu</hostname>
       <port>465</port>

@@ -5,6 +5,8 @@
     <domain>zohomail.com.au</domain>
     <displayName>Zoho Mail - Australia</displayName>
     <displayShortName>Zoho - Australia</displayShortName>
+    <!-- You must enable IMAP Access for your account  
+	     before you begin the configuration in the email client.  --> 
     <incomingServer type="imap">
       <hostname>imap.zoho.com.au</hostname>
       <port>993</port>
@@ -12,7 +14,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable IMAP Access for your account  
+    <!-- You must enable POP Access for your account  
 	     before you begin the configuration in the email client.  -->
     <incomingServer type="pop3">
       <hostname>pop.zoho.com.au</hostname>
@@ -21,8 +23,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable POP Access for your account  
-	     before you begin the configuration in the email client.  -->
     <outgoingServer type="smtp">
       <hostname>smtp.zoho.com.au</hostname>
       <port>465</port>

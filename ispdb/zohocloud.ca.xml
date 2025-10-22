@@ -5,6 +5,8 @@
     <domain>zohomailcloud.ca</domain>
     <displayName>Zoho Mail - Canada</displayName>
     <displayShortName>Zoho - Canada</displayShortName>
+    <!-- You must enable IMAP Access for your account  
+	     before you begin the configuration in the email client.  -->
     <incomingServer type="imap">
       <hostname>imap.zohocloud.ca</hostname>
       <port>993</port>
@@ -12,7 +14,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable IMAP Access for your account  
+    <!-- You must enable POP Access for your account  
 	     before you begin the configuration in the email client.  -->
     <incomingServer type="pop3">
       <hostname>pop.zohocloud.ca</hostname>
@@ -21,8 +23,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
-    <!-- You must enable POP Access for your account  
-	     before you begin the configuration in the email client.  -->
     <outgoingServer type="smtp">
       <hostname>smtp.zohocloud.ca</hostname>
       <port>465</port>
