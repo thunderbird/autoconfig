@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="nili.ca">
+    <domain>nili.ca</domain>
+    <displayName>Nili Mail</displayName>
+    <displayShortName>Nili</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>email.nili.email</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+
+    <outgoingServer type="smtp">
+      <hostname>email.nili.email</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+
+    <webMail>
+      <loginPage url="https://webmail.nili.ca/"/>
+    </webMail>
+
+    <!-- Optional: document your help page(s) for maintainers -->
+     <documentation url="https://nili.ca/knowledge-base/how-to-connect-email-clients-to-servers/">
+      <descr lang="en">POP, IMAP, and SMTP settings for Nili</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
