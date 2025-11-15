@@ -2,10 +2,9 @@
 <clientConfig version="1.1">
   <emailProvider id="teol.net">
     <domain>teol.net</domain>
-
+    <domain>mtel.tel</domain>
     <displayName>TEOL.net Mail</displayName>
     <displayShortName>TEOL</displayShortName>
-
     <incomingServer type="imap">
       <hostname>imap.teol.net</hostname>
       <port>993</port>
@@ -26,10 +25,8 @@
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-
     <documentation url="https://hostingpodrska.teol.net/osticket/kb/faq.php?id=29">
       <descr lang="sr">Koje parametre da koristim prilikom podesavanja Mail klijenta?</descr>
     </documentation>
   </emailProvider>
-
 </clientConfig>
