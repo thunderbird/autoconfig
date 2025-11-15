@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <clientConfig version="1.1">
   <emailProvider id="zoho.com">
-    <domain>zoho.com</domain>
-    <domain>zohomail.com</domain>
-    <displayName>Zoho Mail - US</displayName>
-    <displayShortName>Zoho - US</displayShortName>
+    <domain>zoho.eu</domain>
+    <domain>zohomail.eu</domain>
+    <displayName>Zoho Mail - Europe</displayName>
+    <displayShortName>Zoho - Europe</displayShortName>
     <!-- You must enable IMAP Access for your account  
 	     before you begin the configuration in the email client.  -->
     <incomingServer type="imap">
-      <hostname>imap.zoho.com</hostname>
+      <hostname>imap.zoho.eu</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
@@ -17,21 +17,21 @@
     <!-- You must enable POP Access for your account  
 	     before you begin the configuration in the email client.  -->
     <incomingServer type="pop3">
-      <hostname>pop.zoho.com</hostname>
+      <hostname>pop.zoho.eu</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.zoho.com</hostname>
+      <hostname>smtp.zoho.eu</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.zoho.com</hostname>
+      <hostname>smtp.zoho.eu</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
