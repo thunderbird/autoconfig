@@ -39,7 +39,7 @@
       <authentication>password-cleartext</authentication>
     </outgoingServer>
         <outgoingServer type="smtp">
-      <hostname>smtp.att.net</hostname>
+      <hostname>smtp.mail.att.net</hostname>
       <port>587</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
