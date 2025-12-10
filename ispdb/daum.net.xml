@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="daum.net">
+    <domain>daum.net</domain>
+    <displayName>Daum Mail</displayName>
+    <displayShortName>Daum</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.daum.net</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.daum.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-encrypted</authentication>
+    </outgoingServer>
+    <documentation url="https://cs.daum.net/faq/43/9234.html#24081"/>
+  </emailProvider>
+</clientConfig>
