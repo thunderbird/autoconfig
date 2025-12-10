@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
-  <emailProvider id="tiscali.it">
-    <domain>tiscali.it</domain>
-    <displayName>Tiscali Mail</displayName>
-    <displayShortName>Tiscali</displayShortName>
+  <emailProvider id="naver.com">
+    <domain>naver.com</domain>
+    <displayName>Naver</displayName>
+    <displayShortName>Naver</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap.tiscali.it</hostname>
+      <hostname>imap.naver.com</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop.tiscali.it</hostname>
+      <hostname>pop.naver.com</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
-      <authentication>password-encrypted</authentication>
+      <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.tiscali.it</hostname>
+      <hostname>smtp.naver.com</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
-      <restriction>client-IP-address</restriction>
     </outgoingServer>
-    <documentation url="https://assistenza.tiscali.it/servizi/guida/posta-elettronica/"/>
+    <documentation url="https://help.naver.com/service/30029/contents/21342?osType=PC&lang=ko"/>
   </emailProvider>
 </clientConfig>

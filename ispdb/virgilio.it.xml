@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<clientConfig version="1.1">
+  <emailProvider id="virgilio.it">
+    <domain>virgilio.it</domain>
+    <displayName>Virgilio Mail</displayName>
+    <displayShortName>Virgilio</displayShortName>
+    <incomingServer type="imap">
+      <hostname>in.virgilio.it</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>in.virgilio.it</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>out.virgilio.it</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://aiuto.virgilio.it/articolo/mail/configurare-virgilio-mail-con-client-di-posta-imap-e-smtp/"/>
+  </emailProvider>
+</clientConfig>

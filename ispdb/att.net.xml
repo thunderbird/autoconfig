@@ -3,6 +3,7 @@
     <domain>ameritech.net</domain>
     <domain>att.net</domain>
     <domain>bellsouth.net</domain>
+    <domain>currently.com</domain>
     <domain>flash.net</domain>
     <domain>nvbell.net</domain>
     <domain>pacbell.net</domain>
@@ -31,6 +32,14 @@
     </incomingServer>
     <outgoingServer type="smtp">
       <hostname>outbound.att.net</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.mail.att.net</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
