@@ -25,6 +25,6 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </outgoingServer>
-    <documentation url="https://help.naver.com/service/30029/contents/21342?osType=PC&lang=ko"/>
+    <documentation url="https://help.naver.com/service/30029/contents/21342?osType=PC&amp;lang=ko"/>
   </emailProvider>
 </clientConfig>
