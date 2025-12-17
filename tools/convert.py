@@ -31,6 +31,7 @@ import codecs
 import os.path
 import stat
 import sys
+from typing import Dict
 import lxml.etree as ET
 
 
@@ -52,54 +53,76 @@ def write_config(outData, time, filename=None):
     print("Writing %s" % filename)
     file = codecs.open(filename, "wb")
     file.write(outData)
-    file.write(b'\n')
+    file.write(b"\n")
     file.close()
 
 
 def write_domains(doc, time, output_dir="."):
     outData = doc_to_bytestring(doc)
-    for d in doc.findall("//domain"):
+    for d in doc.getroot().findall(".//domain"):
         write_config(outData, time, output_dir + "/" + d.text)
 
 
 def main():
     # parse command line options
     parser = argparse.ArgumentParser()
-    parser.add_argument("-d", metavar="dir",
-                        help="output directory")
-    parser.add_argument("-a", action="store_true",
-                        help="write configuration files for all domains")
-    parser.add_argument("file", nargs="*",
-                        help="input file(s) to process, wildcards allowed")
+    parser.add_argument("-d", metavar="dir", help="output directory")
+    parser.add_argument(
+        "-a", action="store_true", help="write configuration files for all domains"
+    )
+    parser.add_argument(
+        "file", nargs="*", help="input file(s) to process, wildcards allowed"
+    )
     args = parser.parse_args(sys.argv[1:])
 
     # process arguments
     convertTime = os.stat(sys.argv[0]).st_mtime
     is_dir = stat.S_ISDIR
 
+    # Record the files that failed to be processed and the errors related to
+    # them.
+    failed_files: Dict[str, Exception] = {}
+
     for f in args.file:
-        if is_dir(os.stat(f).st_mode):
-            continue
+        try:
+            if is_dir(os.stat(f).st_mode):
+                continue
 
-        if f == "README":
-            continue
+            if f == "README":
+                continue
 
-        doc, time = read_config(f, convertTime)
+            print(f"Processing {f}")
 
-        if args.a:
-            if args.d:
-                write_domains(doc, time, args.d)
+            doc, time = read_config(f, convertTime)
+
+            if args.a:
+                if args.d:
+                    write_domains(doc, time, args.d)
+                else:
+                    print("When you want to write domain files you")
+                    print("should also specify an output directory")
+                    print("using -d dir")
+                    parser.print_usage()
+                    exit(2)
+            elif args.d:
+                outData = doc_to_bytestring(doc)
+                write_config(outData, time, args.d + "/" + os.path.basename(f))
             else:
-                print("When you want to write domain files you")
-                print("should also specify an output directory")
-                print("using -d dir")
-                parser.print_usage()
-                exit(2)
-        elif args.d:
-            outData = doc_to_bytestring(doc)
-            write_config(outData, time, args.d + "/" + os.path.basename(f))
-        else:
-            print_config(doc)
+                print_config(doc)
+        except Exception as e:
+            print(f"File {f} could not be processed: {e}")
+            failed_files[f] = e
+
+    if len(failed_files) > 0:
+        # Print the failed files, preceded by an empty line to separate them
+        # from the previous logs.
+        print()
+        print("Processing the following file(s) has failed:")
+
+        for file, exc in failed_files.items():
+            print(f"{file}: {exc}")
+
+        exit(1)
 
 
 if __name__ == "__main__":
