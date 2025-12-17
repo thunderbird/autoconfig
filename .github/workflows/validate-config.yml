@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-    - name: BOM check
-      run: |
-        ! grep -rlI $'\xEF\xBB\xBF' ispdb
+      - name: BOM check
+        run: |
+          ! grep -rlI $'\xEF\xBB\xBF' ispdb
 
       - name: Validate file extensions
         run: |
