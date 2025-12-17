@@ -10,9 +10,8 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: BOM check
-      uses: arma-actions/bom-check@v1.1
-      with:
-        path: ispdb
+      run |
+        ! grep -rlI $'\xEF\xBB\xBF' ispdb
 
     - name: Validate file extensions
       run: | 
