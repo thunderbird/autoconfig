@@ -19,6 +19,5 @@ jobs:
           ls -1 ispdb/ | grep -v '\.xml$' | awk '{print "::error file=ispdb/"$0"::File name \"ispdb/"$0"\" does not end in .xml – Please rename!"}' && exit 1 || true
 
       - name: Validate XML content
-        uses: action-pack/valid-xml@v1.09
-        with:
-          path: "ispdb/"
+        run: |
+          python tools/validate.py ispdb/*
