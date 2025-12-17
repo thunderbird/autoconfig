@@ -20,4 +20,5 @@ jobs:
 
       - name: Validate XML content
         run: |
+          pip install lxml
           python tools/validate.py ispdb/*
