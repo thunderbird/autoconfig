@@ -27,16 +27,15 @@
 # ***** END LICENSE BLOCK *****
 
 import argparse
-import codecs
 import os.path
-import stat
 import sys
 from typing import Dict
+
 import lxml.etree as ET
 
 
 def read_config(file, convertTime):
-    return (ET.parse(file), max(os.stat(file).st_mtime, convertTime))
+    return (ET.parse(file), max(os.path.getmtime(file), convertTime))
 
 
 def doc_to_bytestring(doc):
@@ -48,19 +47,18 @@ def print_config(doc):
 
 
 def write_config(outData, time, filename=None):
-    if os.path.exists(filename) and os.stat(filename).st_mtime >= time:
+    if os.path.exists(filename) and os.path.getmtime(filename) >= time:
         return
-    print("Writing %s" % filename)
-    file = codecs.open(filename, "wb")
-    file.write(outData)
-    file.write(b"\n")
-    file.close()
+    print(f"Writing {filename}")
+    with open(filename, "wb") as file:
+        file.write(outData)
+        file.write(b"\n")
 
 
 def write_domains(doc, time, output_dir="."):
     outData = doc_to_bytestring(doc)
     for d in doc.getroot().findall(".//domain"):
-        write_config(outData, time, output_dir + "/" + d.text)
+        write_config(outData, time, os.path.join(output_dir, d.text))
 
 
 def main():
@@ -73,11 +71,10 @@ def main():
     parser.add_argument(
         "file", nargs="*", help="input file(s) to process, wildcards allowed"
     )
-    args = parser.parse_args(sys.argv[1:])
+    args = parser.parse_args()
 
     # process arguments
-    convertTime = os.stat(sys.argv[0]).st_mtime
-    is_dir = stat.S_ISDIR
+    convertTime = os.path.getmtime(sys.argv[0])
 
     # Record the files that failed to be processed and the errors related to
     # them.
@@ -85,7 +82,7 @@ def main():
 
     for f in args.file:
         try:
-            if is_dir(os.stat(f).st_mode):
+            if os.path.isdir(f):
                 continue
 
             if f == "README":
@@ -103,10 +100,10 @@ def main():
                     print("should also specify an output directory")
                     print("using -d dir")
                     parser.print_usage()
-                    exit(2)
+                    sys.exit(2)
             elif args.d:
                 outData = doc_to_bytestring(doc)
-                write_config(outData, time, args.d + "/" + os.path.basename(f))
+                write_config(outData, time, os.path.join(args.d, os.path.basename(f)))
             else:
                 print_config(doc)
         except Exception as e:
@@ -122,7 +119,7 @@ def main():
         for file, exc in failed_files.items():
             print(f"{file}: {exc}")
 
-        exit(1)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

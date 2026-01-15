@@ -9,6 +9,7 @@ import argparse
 import os
 import sys
 from typing import List
+
 from lxml import etree
 
 
@@ -17,7 +18,7 @@ def main():
     parser.add_argument(
         "file", nargs="*", help="input file(s) to process, wildcards allowed"
     )
-    args = parser.parse_args(sys.argv[1:])
+    args = parser.parse_args()
 
     # Defining `files` here isn't strictly necessary, but the extra typing
     # (which we can't really get otherwise) helps with maintenance.
@@ -44,7 +45,7 @@ def main():
             print(f"File {f} did not parse: {e}")
             ret = 1
 
-    exit(ret)
+    sys.exit(ret)
 
 
 if __name__ == "__main__":
