@@ -6,3 +6,5 @@ source files for the Thunderbird ISP database.
 
 For documentation regarding either topic, please refer to [this repository's
 wiki](https://github.com/thunderbird/autoconfig/wiki).
+
+This ISPDB was created by Ben Bucksch.
