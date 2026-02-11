@@ -1,0 +1,25 @@
+name: Validate against staging
+
+on: [pull_request]
+
+jobs:
+  validate_against_stating:
+    runs-on: ubuntu-latest
+
+    env:
+      PYTHONDEVMODE: 1
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run deployment script
+        run: |
+          pip install lxml
+          mkdir tmp/
+          python tools/convert.py -a -d tmp ispdb/*
+
+      - name: Compare output against staging
+        run: |
+          pip install requests
+          python tools/compare_out_files.py -b https://autoconfig-stage.thunderbird.net/v1.1/ tmp/
+
