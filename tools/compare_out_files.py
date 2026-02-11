@@ -43,7 +43,7 @@ def get_and_compare(file_name: str, base_url: str, local_folder: str) -> str:
             )
         )
 
-        if len(deltas):
+        if len(deltas) > 0:
             print(f"Diff deltas:\n\n{"".join(deltas)}", file=sys.stderr)
             raise RuntimeError("local file list does not match staging copy")
 
