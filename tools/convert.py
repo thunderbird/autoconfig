@@ -29,7 +29,8 @@
 import argparse
 import os.path
 import sys
-from typing import Dict
+from typing import Dict, List
+import json
 
 import lxml.etree as ET
 
@@ -55,10 +56,16 @@ def write_config(outData, time, filename=None):
         file.write(b"\n")
 
 
-def write_domains(doc, time, output_dir="."):
+def write_domains(doc, time, output_dir=".") -> List[str]:
     outData = doc_to_bytestring(doc)
+
+    domains: List[str] = []
+
     for d in doc.getroot().findall(".//domain"):
         write_config(outData, time, os.path.join(output_dir, d.text))
+        domains.append(d.text)
+
+    return domains
 
 
 def main():
@@ -80,6 +87,9 @@ def main():
     # them.
     failed_files: Dict[str, Exception] = {}
 
+    # Record the names of the files written so we can list them in a file later.
+    out_file_names: List[str] = []
+
     for f in args.file:
         try:
             if os.path.isdir(f):
@@ -94,7 +104,8 @@ def main():
 
             if args.a:
                 if args.d:
-                    write_domains(doc, time, args.d)
+                    domains = write_domains(doc, time, args.d)
+                    out_file_names.extend(domains)
                 else:
                     print("When you want to write domain files you")
                     print("should also specify an output directory")
@@ -103,7 +114,9 @@ def main():
                     sys.exit(2)
             elif args.d:
                 outData = doc_to_bytestring(doc)
-                write_config(outData, time, os.path.join(args.d, os.path.basename(f)))
+                filename = os.path.basename(f)
+                write_config(outData, time, os.path.join(args.d, filename))
+                out_file_names.append(filename)
             else:
                 print_config(doc)
         except Exception as e:
@@ -120,6 +133,17 @@ def main():
             print(f"{file}: {exc}")
 
         sys.exit(1)
+
+    # Sort the list for idempotency.
+    out_file_names.sort()
+
+    # Write the list of output files in a JSON file. This file will mostly be
+    # used in CI processes. We generate it with indentation so that other CI
+    # scripts can produce a more legible output.
+    out_file_list_path = os.path.join(args.d, "generated_files.json")
+    with open(out_file_list_path, "w") as fp:
+        print(f"Writing list of {len(out_file_names)} files")
+        fp.write(json.dumps(out_file_names, indent=2))
 
 
 if __name__ == "__main__":
