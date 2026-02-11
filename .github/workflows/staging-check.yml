@@ -4,6 +4,9 @@ on: [pull_request]
 
 jobs:
   validate_against_stating:
+    permissions:
+      pull-requests: write
+
     runs-on: ubuntu-latest
 
     env:
