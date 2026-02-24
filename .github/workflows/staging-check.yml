@@ -28,4 +28,4 @@ jobs:
 
       - name: Calculate generated_files.json diff with prod
         run: |
-          python tools/calculate_generated_files_diff.py -b https://autoconfig.thunderbird.net/v1.1 -t ${{ secrets.GITHUB_TOKEN }} -r ${{ github.repository }} -n ${{ github.event.pull_request.number }}
+          python tools/calculate_generated_files_diff.py -b https://autoconfig.thunderbird.net/v1.1 -t ${{ secrets.GITHUB_TOKEN }} -r ${{ github.repository }} -n ${{ github.event.pull_request.number }} tmp/
