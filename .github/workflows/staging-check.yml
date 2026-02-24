@@ -1,6 +1,9 @@
 name: Validate output against staging
 
-on: [pull_request]
+on:
+  pull_request:
+    branches:
+      - prod
 
 jobs:
   validate_against_stating:
