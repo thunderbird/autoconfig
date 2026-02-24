@@ -53,10 +53,10 @@ def main():
         # time we expect to have already validated that the
         deltas = list(
             difflib.unified_diff(
-                local_list,
                 resp.text.splitlines(keepends=True),
-                fromfile="staging",
-                tofile="production",
+                local_list,
+                fromfile="production",
+                tofile="staging",
             )
         )
 
