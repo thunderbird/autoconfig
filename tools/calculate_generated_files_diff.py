@@ -55,8 +55,8 @@ def main():
             difflib.unified_diff(
                 resp.text.splitlines(keepends=True),
                 local_list,
-                fromfile="production",
-                tofile="staging",
+                fromfile="current",
+                tofile="new",
             )
         )
 
