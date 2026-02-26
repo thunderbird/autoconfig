@@ -20,10 +20,10 @@ jobs:
           repositories: thunderbird-website
 
       - name: Trigger thunderbird-website deployment
-        uses: peter-evans/repository-dispatch@v3
-        with:
-          token: ${{ steps.app-token.outputs.token }}
-          repository: thunderbird/thunderbird-website
-          event-type: ${{ github.ref_name == 'prod' && 'prod' || 'stage' }}
-          client-payload: >-
-            {"message": "autoconfig ${{ github.ref_name }}@${{ github.sha }}"}
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          EVENT_TYPE=${{ github.ref_name == 'prod' && 'prod' || 'stage' }}
+          gh api repos/thunderbird/thunderbird-website/dispatches \
+            -f "event_type=$EVENT_TYPE" \
+            -f "client_payload[message]=triggered by autoconfig ${{ github.ref_name }}@${{ github.sha }}"
