@@ -128,7 +128,7 @@ def main():
 
     print("Fetching and comparing file list")
 
-    listed_files = get_file_list(args.list_url, args.folder)
+    listed_files = get_file_list(args.l, args.folder)
 
     failed_files: Dict[str, Exception] = {}
     for file in listed_files:
