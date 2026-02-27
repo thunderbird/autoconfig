@@ -27,7 +27,7 @@ jobs:
       - name: Compare output against staging
         run: |
           pip install requests
-          python tools/compare_out_files.py -b https://autoconfig-stage.thunderbird.net tmp/
+          python tools/compare_out_files.py -l https://autoconfig-stage.thunderbird.net/generated_files.json -b https://autoconfig-stage.thunderbird.net/v1.1 tmp/
 
       - name: Calculate generated_files.json diff with prod
         run: |
