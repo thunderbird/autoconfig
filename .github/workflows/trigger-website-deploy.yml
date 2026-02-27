@@ -1,0 +1,29 @@
+name: Trigger thunderbird-website deploy
+
+on:
+  push:
+    branches:
+      - master
+      - prod
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.WEBSITE_AUTOMATION_APP_ID }}
+          private-key: ${{ secrets.WEBSITE_AUTOMATION_PRIVATE_KEY }}
+          owner: thunderbird
+          repositories: thunderbird-website
+
+      - name: Trigger thunderbird-website deployment
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          EVENT_TYPE=${{ github.ref_name == 'prod' && 'prod' || 'stage' }}
+          gh api repos/thunderbird/thunderbird-website/dispatches \
+            -f "event_type=$EVENT_TYPE" \
+            -f "client_payload[message]=triggered by autoconfig ${{ github.ref_name }}@${{ github.sha }}"
