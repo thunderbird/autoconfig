@@ -1,32 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0"?>
 <clientConfig version="1.1">
-  <emailProvider id="xtra.co.nz">
-    <domain>xtra.co.nz</domain>
-    <displayName>Xtra Mail</displayName>
-    <displayShortName>Xtra Mail</displayShortName>
+  <emailProvider id="virgilio.it">
+    <domain>virgilio.it</domain>
+    <displayName>Virgilio Mail</displayName>
+    <displayShortName>Virgilio</displayShortName>
     <incomingServer type="imap">
-      <hostname>imap.xtra.co.nz</hostname>
+      <hostname>in.virgilio.it</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop3.xtra.co.nz</hostname>
+      <hostname>in.virgilio.it</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>send.xtra.co.nz</hostname>
+      <hostname>out.virgilio.it</hostname>
       <port>465</port>
       <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
-    <documentation url="https://www.spark.co.nz/help/get-more/xtra/xtra-mail-setup/">
-      <descr lang="en">Configure IMAP and POP3 for Xtra Mail</descr>
-    </documentation>
+    <documentation url="https://aiuto.virgilio.it/articolo/mail/configurare-virgilio-mail-con-client-di-posta-imap-e-smtp/"/>
   </emailProvider>
 </clientConfig>

@@ -1,0 +1,34 @@
+name: Validate output against staging
+
+on:
+  pull_request:
+    branches:
+      - prod
+
+jobs:
+  validate_against_stating:
+    permissions:
+      pull-requests: write
+
+    runs-on: ubuntu-latest
+
+    env:
+      PYTHONDEVMODE: 1
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Run deployment script
+        run: |
+          pip install lxml
+          mkdir tmp/
+          python tools/convert.py -a -d tmp ispdb/*
+
+      - name: Compare output against staging
+        run: |
+          pip install requests
+          python tools/compare_out_files.py -l https://autoconfig-stage.thunderbird.net/generated_files.json -b https://autoconfig-stage.thunderbird.net/v1.1 tmp/
+
+      - name: Calculate generated_files.json diff with prod
+        run: |
+          python tools/calculate_generated_files_diff.py -b https://autoconfig.thunderbird.net -t ${{ secrets.GITHUB_TOKEN }} -r ${{ github.repository }} -n ${{ github.event.pull_request.number }} tmp/

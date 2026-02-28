@@ -1,12 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <clientConfig version="1.1">
   <emailProvider id="fastwebnet.it">
     <domain>fastwebnet.it</domain>
-    <displayName>fastwebnet.it</displayName>
-    <displayShortName>fastwebnet.it</displayShortName>
+    <displayName>Fastweb</displayName>
+    <displayShortName>Fastweb</displayShortName>
     <incomingServer type="imap">
       <hostname>imap.fastwebnet.it</hostname>
-      <port>143</port>
-      <socketType>STARTTLS</socketType>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-encrypted</authentication>
+    </incomingServer>
+     <incomingServer type="pop3">
+      <hostname>pop.fastwebnet.it</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </incomingServer>
@@ -17,7 +25,7 @@
       <username>%EMAILADDRESS%</username>
       <authentication>password-encrypted</authentication>
     </outgoingServer>
-    <documentation url="http://www.fastweb.it/myfastpage/assistenza/guide-fisso/configurazioni/posta-elettronica/config-mozilla-thunderbird/">
+    <documentation url="https://www.fastweb.it/fastmail/guida/mail_POPeIMAP/">
     </documentation>
   </emailProvider>
 </clientConfig>
