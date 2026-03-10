@@ -38,7 +38,7 @@
     <incomingServer type="graph">
       <username>%EMAILADDRESS%</username>
       <authentication>OAuth2</authentication>
-      <url>https://graph.microsoft.com/v1.0</url>
+      <url>https://graph.microsoft.com/</url>
     </incomingServer>
     <!-- Backwards compatibility with single Exchange incomingServer element. -->
     <incomingServer type="exchange">
