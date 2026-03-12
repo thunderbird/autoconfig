@@ -32,3 +32,8 @@ jobs:
         run: |
           pip install lxml
           python tools/validate.py ispdb/*
+
+      - name: Run convert.py
+        run: |
+          mkdir tmp/
+          python tools/convert.py -a -d tmp/ ispdb/*
