@@ -25,6 +25,22 @@
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
       </pop3>
     </incomingServer>
+    <incomingServer type="ews">
+      <username>%EMAILADDRESS</username>
+      <authentication>OAuth2</authentication>
+      <url>https://outlook.office365.com/ews/exchange.asmx</url>
+    </incomingServer>
+    <incomingServer type="owa">
+      <username>%EMAILADDRESS</username>
+      <authentication>OAuth2</authentication>
+      <url>https://outlook.office365.com/owa/</url>
+    </incomingServer>
+    <incomingServer type="graph">
+      <username>%EMAILADDRESS%</username>
+      <authentication>OAuth2</authentication>
+      <url>https://graph.microsoft.com/</url>
+    </incomingServer>
+    <!-- Backwards compatibility with single Exchange incomingServer element. -->
     <incomingServer type="exchange">
       <hostname>outlook.office365.com</hostname>
       <port>443</port>
