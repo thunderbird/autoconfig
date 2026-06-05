@@ -12,7 +12,7 @@
       <username>%EMAILADDRESS%</username>
     </incomingServer>
     <incomingServer type="pop3">
-      <hostname>imap.whosts.pl</hostname>
+      <hostname>pop3.whosts.pl</hostname>
       <port>995</port>
       <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
@@ -22,6 +22,13 @@
       <hostname>smtp.whosts.pl</hostname>
       <port>587</port>
       <socketType>STARTTLS</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.whosts.pl</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
       <authentication>password-cleartext</authentication>
       <username>%EMAILADDRESS%</username>
     </outgoingServer>
