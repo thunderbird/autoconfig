@@ -4,6 +4,7 @@
     <domain>earthlink.net</domain>
     <domain>mindspring.com</domain>
     <domain>ix.netcom.com</domain>
+    <domain>peoplepc.com</domain>
     <!-- many other domains, via MX earthlink.net -->
     <displayName>EarthLink</displayName>
     <displayShortName>EarthLink</displayShortName>
