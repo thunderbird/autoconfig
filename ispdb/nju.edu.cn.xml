@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="nju.edu.cn">
+    <domain>nju.edu.cn</domain>
+    <domain>smail.nju.edu.cn</domain>
+    <displayName>Nanjing University Mail</displayName>
+    <displayShortName>NJU Mail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.exmail.qq.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>smtp.exmail.qq.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://itsc.nju.edu.cn/1a/8e/c21586a334478/page.htm">
+      <descr lang="en">Nanjing University faculty email client settings</descr>
+      <descr lang="zh-CN">南京大学教师邮箱客户端设置办法</descr>
+    </documentation>
+    <documentation url="https://itsc.nju.edu.cn/1a/8f/c21586a334479/page.htm">
+      <descr lang="en">Nanjing University student email client settings</descr>
+      <descr lang="zh-CN">南京大学学生邮箱客户端配置办法</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
