@@ -7,7 +7,10 @@
     <!-- Server settings as published by freenet:
          https://kundenservice.freenet.de/faq/e-mail-client-mail/einstellungen-serverdaten-fuer-alle-e-mail-programme/
          IMAP mx.freenet.de 993 (SSL) / 143 (STARTTLS), SMTP mx.freenet.de 465 (SSL) / 587 (STARTTLS),
-         username = full e-mail address. freenet recommends IMAP over POP3 and lists no POP3 server. -->
+         username = full e-mail address. freenet recommends IMAP over POP3.
+         freenet also serves this configuration itself at
+         https://autoconfig.freenet.de/mail/config-v1.1.xml (IMAP 993, POP3 995, SMTP 587);
+         the POP3 server below is taken from there. -->
     <incomingServer type="imap">
       <hostname>mx.freenet.de</hostname>
       <port>993</port>
@@ -19,6 +22,13 @@
       <hostname>mx.freenet.de</hostname>
       <port>143</port>
       <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>mx.freenet.de</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
