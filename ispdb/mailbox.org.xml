@@ -7,11 +7,35 @@
     <!-- Server settings as published by mailbox.org:
          https://kb.mailbox.org/de/privat/e-mail/e-mail-konfiguration/
          IMAP imap.mailbox.org 993 (SSL/TLS), SMTP smtp.mailbox.org 465 (SSL/TLS) or 587 (STARTTLS),
-         username = the primary e-mail address, password = the mailbox password. -->
+         username = the primary e-mail address, password = the mailbox password.
+         mailbox.org also serves this configuration itself at
+         https://autoconfig.mailbox.org/mail/config-v1.1.xml; the IMAP 143/STARTTLS
+         and POP3 servers below are taken from there. -->
     <incomingServer type="imap">
       <hostname>imap.mailbox.org</hostname>
       <port>993</port>
       <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>imap.mailbox.org</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.mailbox.org</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="pop3">
+      <hostname>pop3.mailbox.org</hostname>
+      <port>110</port>
+      <socketType>STARTTLS</socketType>
       <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
