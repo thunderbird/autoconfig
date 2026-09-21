@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="freenet.de">
+    <domain>freenet.de</domain>
+    <displayName>freenet Mail</displayName>
+    <displayShortName>freenet</displayShortName>
+    <!-- Server settings as published by freenet:
+         https://kundenservice.freenet.de/faq/e-mail-client-mail/einstellungen-serverdaten-fuer-alle-e-mail-programme/
+         IMAP mx.freenet.de 993 (SSL) / 143 (STARTTLS), SMTP mx.freenet.de 465 (SSL) / 587 (STARTTLS),
+         username = full e-mail address. freenet recommends IMAP over POP3 and lists no POP3 server. -->
+    <incomingServer type="imap">
+      <hostname>mx.freenet.de</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mx.freenet.de</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mx.freenet.de</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mx.freenet.de</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://kundenservice.freenet.de/faq/e-mail-client-mail/einstellungen-serverdaten-fuer-alle-e-mail-programme/">
+      <descr lang="de">Serverdaten für alle E-Mail-Programme</descr>
+      <descr>Server settings for e-mail clients</descr>
+    </documentation>
+    <!-- Client access is off until the user enables it in the webmail settings:
+         https://kundenservice.freenet.de/faq/e-mail-client-mail/pop3-imap-und-smtp-aktivieren/
+         (Einstellungen → POP3/IMAP/SMTP → Einrichtung POP3/IMAP → "POP3, IMAP und SMTP aktivieren") -->
+    <enable visiturl="https://kundenservice.freenet.de/faq/e-mail-client-mail/pop3-imap-und-smtp-aktivieren/">
+      <instruction>You must enable "POP3, IMAP und SMTP" once in the e-mail settings of your freenet mailbox.</instruction>
+      <instruction lang="de">Sie müssen einmalig in den Einstellungen Ihres freenet-Postfachs unter „POP3/IMAP/SMTP“ den Haken „POP3, IMAP und SMTP aktivieren“ setzen.</instruction>
+    </enable>
+  </emailProvider>
+</clientConfig>
