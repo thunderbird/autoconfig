@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="inter-corporate.com">
+    <domain>inter-corporate.com</domain>
+    <domain>inter-corporate.net</domain>
+    <domain>inter-corporate.org</domain>
+    <domain>inter-corporate.ca</domain>
+    <domain>8x.ca</domain>
+    <domain>bcmail.ca</domain>
+    <domain>canadianemail.ca</domain>
+    <domain>commodore64.ca</domain>
+    <domain>c64mail.com</domain>
+    <domain>lmail.ca</domain>
+    <domain>modperl.pl</domain>
+    <domain>pocomo.ca</domain>
+    <domain>pithball.com</domain>
+    <domain>pithballs.com</domain>
+    <domain>sexmail.ca</domain>
+    <domain>sexymail.ca</domain>
+    <domain>ugfzc3dvcmq6.com</domain>
+    <domain>wancity.com</domain>
+    <domain>wordpressmail.ca</domain>
+    <domain>wpmail.ca</domain>
+    <domain>yvrtaxi.ca</domain>
+    <domain>yvrtaxi.com</domain>
+    <domain>xn--pssq86a.com</domain>
+    <displayName>Inter-Corporate eMail 🇨🇦</displayName>
+    <displayShortName>eMail</displayShortName>
+    <incomingServer type="imap">
+      <hostname>mail.inter-corporate.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <incomingServer type="imap">
+      <hostname>mail.inter-corporate.com</hostname>
+      <port>143</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.inter-corporate.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.inter-corporate.com</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <documentation url="https://www.inter-corporate.com/mail/?e=%EMAILADDRESS%">
+      <descr lang="en">Electronic Mail Configuration</descr>
+    </documentation>
+  </emailProvider>
+  <webMail>
+    <loginPage url="https://mail.inter-corporate.com/" />
+  </webMail>
+</clientConfig>
