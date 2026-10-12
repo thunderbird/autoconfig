@@ -4,19 +4,28 @@
     <domain>goo.jp</domain>
     <displayName>goo メールアドバンス</displayName>
     <displayShortName>goo</displayShortName>
+    <incomingServer type="imap">
+      <hostname>imap.mail.goo.jp</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
     <incomingServer type="pop3">
-      <hostname>pop.mail.goo.ne.jp</hostname>
-      <port>110</port>
-      <socketType>plain</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <hostname>pop.mail.goo.jp</hostname>
+      <port>995</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </incomingServer>
     <outgoingServer type="smtp">
-      <hostname>smtp.mail.goo.ne.jp</hostname>
-      <port>587</port>
-      <socketType>plain</socketType>
-      <username>%EMAILLOCALPART%</username>
+      <hostname>smtp.mail.goo.jp</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
       <authentication>password-cleartext</authentication>
     </outgoingServer>
+    <documentation
+      url="https://web.archive.org/web/20251118110504/https://mail.goo.ne.jp/howto/#app" />
   </emailProvider>
 </clientConfig>
