@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="migadu.com">
+    <domain>migadu.com</domain>
+    <!-- MX: Migadu hosts custom domains, so the ISPDB is reached through the
+         MX lookup rather than through the customer's own domain. -->
+    <domain>aspmx1.migadu.com</domain>
+    <domain>aspmx2.migadu.com</domain>
+
+    <displayName>Migadu</displayName>
+    <displayShortName>Migadu</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>imap.migadu.com</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </incomingServer>
+
+    <outgoingServer type="smtp">
+      <hostname>smtp.migadu.com</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <authentication>password-cleartext</authentication>
+      <username>%EMAILADDRESS%</username>
+    </outgoingServer>
+
+    <documentation url="https://www.migadu.com/guides/imap/">
+      <descr lang="en">IMAP and SMTP settings</descr>
+    </documentation>
+  </emailProvider>
+</clientConfig>
