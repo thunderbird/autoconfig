@@ -6,6 +6,8 @@
     <domain>onmicrosoft.com</domain>
     <!-- MX e.g. example.mail.protection.outlook.com -->
     <domain>mail.protection.outlook.com</domain>
+    <!-- MX e.g. contosotest-com.o-v1.mx.microsoft -->
+    <domain>mx.microsoft</domain>
     <displayName>Microsoft 365</displayName>
     <displayShortName>Microsoft 365</displayShortName>
     <incomingServer type="imap">
