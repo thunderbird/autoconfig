@@ -25,11 +25,6 @@
         <leaveMessagesOnServer>true</leaveMessagesOnServer>
       </pop3>
     </incomingServer>
-    <incomingServer type="ews">
-      <username>%EMAILADDRESS%</username>
-      <authentication>OAuth2</authentication>
-      <url>https://outlook.office365.com/ews/exchange.asmx</url>
-    </incomingServer>
     <incomingServer type="owa">
       <username>%EMAILADDRESS%</username>
       <authentication>OAuth2</authentication>
@@ -48,7 +43,6 @@
       <socketType>SSL</socketType>
       <authentication>OAuth2</authentication>
       <owaURL>https://outlook.office365.com/owa/</owaURL>
-      <ewsURL>https://outlook.office365.com/ews/exchange.asmx</ewsURL>
       <useGlobalPreferredServer>true</useGlobalPreferredServer>
     </incomingServer>
     <outgoingServer type="smtp">
