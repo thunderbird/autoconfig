@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<clientConfig version="1.1">
+  <emailProvider id="fisina.pt">
+    <domain>fisina.pt</domain>
+
+    <displayName>Servidor de e-mail Fisina</displayName>
+    <displayShortName>Fisina</displayShortName>
+
+    <incomingServer type="imap">
+      <hostname>mail.fisina.pt</hostname>
+      <port>993</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </incomingServer>
+
+    <outgoingServer type="smtp">
+      <hostname>mail.fisina.pt</hostname>
+      <port>465</port>
+      <socketType>SSL</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+    <outgoingServer type="smtp">
+      <hostname>mail.fisina.pt</hostname>
+      <port>587</port>
+      <socketType>STARTTLS</socketType>
+      <username>%EMAILADDRESS%</username>
+      <authentication>password-cleartext</authentication>
+    </outgoingServer>
+
+    <documentation url="https://mail.fisina.pt/config/">
+      <descr lang="pt">Como configurar o correio da Fisina</descr>
+      <descr lang="en">How to set up Fisina email</descr>
+    </documentation>
+  </emailProvider>
+
+  <webMail>
+    <loginPage url="https://mail.fisina.pt/rc/" />
+  </webMail>
+</clientConfig>
